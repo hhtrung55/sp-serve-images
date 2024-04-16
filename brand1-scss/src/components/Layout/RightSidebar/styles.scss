@@ -1,0 +1,86 @@
+@import 'src/assets/scss/responsive.scss';
+
+#right-sidebar {
+  // background-color: $color-neutral-5;
+  color: $color-neutral-white;
+  height: 100%;
+}
+.ant-drawer-content.drawerRightDesktop {
+  background: var(--neutral-neutral-2, #1d2136);
+}
+
+.drawerRightDesktop {
+  .ant-drawer-header {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #2b3048 !important;
+  }
+  .ant-drawer-body {
+    padding: 0px !important;
+  }
+  .main-actions {
+    background: var(--neutral-neutral-2, #1d2136);
+    width: 20.9%;
+    position: fixed;
+    bottom: 0;
+    .body-actions {
+      padding: 8px 20px 20px 20px;
+    }
+    .custom-button-send {
+      max-width: 50px;
+      max-height: 40px;
+      border-radius: 12px;
+      border: 0.5px solid var(--Stroke-blue, #0085ff);
+      background: var(--primary-main, #0075ff);
+      box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+        4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+    }
+    input {
+      color: var(--neutral-neutral-8, #eff0f7);
+      background: var(--neutral-neutral-1, #15192f);
+      border-color: var(--neutral-neutral-1, #15192f);
+    }
+    input::placeholder {
+      color: var(--neutral-neutral-4, #414459);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+    .pt-14px {
+      padding-top: 14px;
+    }
+    .rule {
+      color: var(--neutral-neutral-5, #6c708a);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  .main-message {
+    max-height: 75vh;
+    overflow: auto;
+    .main-item {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--neutral-stroke, #2b3048);
+      background: var(--neutral-neutral-3, #22263b);
+      box-shadow: 4px 4px 4px 0px rgba(65, 68, 89, 0.25) inset,
+        -4px -4px 4px 0px rgba(65, 68, 89, 0.25) inset;
+      .author {
+        color: var(--neutral-neutral-8, #eff0f7);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 18px */
+      }
+      .message {
+        color: var(--neutral-neutral-5, #6c708a);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 18px */
+      }
+    }
+  }
+}

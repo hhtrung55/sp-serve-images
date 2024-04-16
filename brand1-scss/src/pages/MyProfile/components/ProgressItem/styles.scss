@@ -1,0 +1,25 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.progress-info {
+    border-radius: 12px;
+    background: $color-neutral-2;
+    padding: 13px 16px;
+
+    &.button-active {
+        cursor: pointer;
+        .progress-info__text {
+            color: $color-neutral-white;
+        }
+        .progress-info__icon {
+            color: $color-neutral-white;
+        }
+        &:hover {
+            border-radius: 12px;
+            background: $color-neutral-4;
+        }
+    }
+
+    &.button-inactive {
+    }
+}

@@ -1,0 +1,73 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.reward-details {
+  &__total-reward {
+    border-radius: 8px;
+    background: $color-neutral-1;
+    padding: 24px;
+
+    img {
+      width: 53px;
+    }
+    &__label {
+      color: $color-white-0;
+      font-size: $font-size-3;
+      font-weight: $font-weight-7;
+      line-height: 24px;
+    }
+
+    &__number {
+      color: $color-neutral-green-2;
+      font-size: $font-size-3;
+      font-weight: $font-weight-7;
+      line-height: 24px;
+    }
+  }
+
+  &__title {
+    color: $color-white-0;
+    font-size: $font-size-4;
+    font-weight: $font-weight-7;
+    line-height: 28px;
+  }
+
+  &__item {
+    &__icon {
+      width: 32px;
+    }
+
+    &__name {
+      width: fit-content;
+      text-wrap: nowrap;
+      min-width: 74.31px;
+    }
+
+    &__process {
+      width: 25%;
+      .ant-progress {
+        margin: 0;
+      }
+      .ant-progress-inner {
+        background-color: $color-neutral-4;
+        .ant-progress-bg {
+          background-color: $color-box-shadow-primary;
+        }
+      }
+    }
+
+    &__usd {
+      color: $color-white-0;
+      min-width: 67px;
+    }
+
+    &__percent {
+      color: $color-neutral-5;
+      font-size: $font-size-3;
+      font-weight: $font-weight-4;
+      line-height: 24px;
+      min-width: 53.36px;
+    }
+  }
+}

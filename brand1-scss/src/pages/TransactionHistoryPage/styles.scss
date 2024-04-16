@@ -1,0 +1,89 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.transaction-history-wrapper {
+  background: $color-neutral-1;
+  padding: 30px 24px 30px 45px;
+
+  @include mobile() {
+    padding: 0;
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__table {
+    .token-amount {
+      font-size: $font-size-3;
+    }
+
+    .more-icon {
+      cursor: pointer;
+    }
+
+    .status {
+      font-family: SG-700;
+      font-size: 0.875rem;
+
+      &--success {
+        color: $color-state-success;
+      }
+
+      &--failed {
+        color: $color-state-error;
+      }
+
+      &--pending {
+        color: $color-neutral-white;
+      }
+    }
+
+    .test {
+      position: relative;
+    }
+  }
+
+  &__empty {
+    min-height: 550px;
+    padding-bottom: 60px;
+  }
+
+  .request-deposit-wrapper {
+    font-size: 0.75rem;
+    margin-top: 16px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    @include mobile() {
+      bottom: 50px;
+    }
+    &__label {
+      font-family: SG-400;
+      color: $color-neutral-5;
+    }
+
+    &__open-pu {
+      font-family: SG-500;
+      color: $color-main-primary;
+      cursor: pointer;
+    }
+  }
+
+  .select-network {
+    min-width: 210px;
+  }
+}
+
+.popup-select-network {
+  .rc-virtual-list-holder {
+    max-height: 100% !important;
+  }
+}
+
+.transaction-history-wrapper__table{
+  overflow-x: scroll !important;
+  white-space: nowrap;
+  width: 100%;
+}

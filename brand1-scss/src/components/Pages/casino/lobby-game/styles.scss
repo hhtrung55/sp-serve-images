@@ -1,0 +1,66 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.main-favorites-game {
+  padding-top: 35px;
+  @include maxWidth($sm) {
+    padding-top: 8px;
+  }
+}
+.main-nodata {
+  margin-top: 3rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+.no-data-text {
+  color: var(--neutral-neutral-5, #6c708a);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.img-nodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.load-more {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.multiplier__profit--up {
+  color: #6be038;
+}
+.record-game {
+  cursor: pointer;
+}
+.record-clant-play,
+.record-game {
+  display: inline-block;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: SG-400;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.payout__currency--up {
+  color: #6be038;
+}
+.bet-history-table-mobile {
+  width: 100%;
+  table-layout: fixed;
+  table {
+    width: 100% !important;
+  }
+}

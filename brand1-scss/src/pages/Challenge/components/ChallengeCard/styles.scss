@@ -1,0 +1,91 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.challenge-card {
+  padding: 16px 16px 16px 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  background: $color-neutral-2;
+  height: 100%;
+  box-sizing: border-box;
+
+  .ellipsis-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+  }
+
+  &__name {
+    color: $color-white-0;
+    font-size: $font-size-2;
+    font-weight: $font-weight-7;
+    line-height: 150%;
+  }
+
+  &__banner {
+    width: 100%;
+    height: 221px;
+    &__game {
+      color: $color-neutral-5;
+      font-size: $font-size-1;
+      font-weight: $font-weight-4;
+      line-height: 150%;
+    }
+
+    .dot {
+      border-radius: 50%;
+      background-color: $color-state-error;
+      width: 4px;
+      height: 4px;
+    }
+
+    &__status {
+      color: $color-state-error;
+      font-size: $font-size-1;
+      font-weight: $font-weight-5;
+      line-height: 150%;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  &__info {
+    margin-top: 8px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    &__item {
+      label {
+        color: $color-neutral-5;
+        font-size: $font-size-1;
+        font-weight: $font-weight-4;
+        line-height: 150%;
+      }
+
+      .value {
+        color: $color-white-0;
+        font-size: $font-size-1;
+        font-weight: $font-weight-4;
+        line-height: 150%;
+      }
+
+      .pnl-value {
+        color: $color-neutral-white;
+
+        &--red {
+          color: $color-state-error;
+        }
+
+        &--green {
+          color: $color-state-success;
+        }
+      }
+    }
+  }
+}

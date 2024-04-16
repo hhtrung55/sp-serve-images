@@ -1,0 +1,64 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.game-card__container {
+  * {
+    box-sizing: border-box;
+  }
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  aspect-ratio: 139/175;
+  cursor: pointer;
+  &:hover {
+    .game-card__overlay {
+      display: flex;
+    }
+  }
+  .game-card__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.75rem;
+    display: block;
+    object-fit: cover;
+  }
+
+  .game-card__overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparentize($color: #000000, $amount: 0.3);
+    border-radius: 0.75rem;
+
+    .game-card__favorite {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+
+    .game-card__btn-favorite {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0px;
+    }
+
+    .game-card__content {
+      color: var(--toastify-color-light); // Adjust text color as needed
+      text-align: center;
+      font-family: SG-400;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875rem;
+      gap: 4px;
+    }
+  }
+}

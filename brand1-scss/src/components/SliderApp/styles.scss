@@ -1,0 +1,20 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.slider-wrapper {
+  .ant-slider-track {
+    background: $color-main-primary;
+  }
+
+  .ant-slider-handle {
+    &::after {
+      background: $color-main-primary;
+      box-shadow: 0 0 0 2px $color-main-primary;
+    }
+  }
+
+  .ant-slider-rail {
+    background: $color-neutral-stroke !important;
+  }
+}

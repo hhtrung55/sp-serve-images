@@ -1,0 +1,40 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.twofa-dialog-modal {
+    max-width: 668px;
+    min-width: 300px;
+    .twofa-dialog {
+        &__title {
+            color: $color-neutral-white;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        &__token-field {
+            padding: 13px 16px;
+            border-radius: 12px;
+            border: 1px solid $color-neutral-stroke;
+            background: $color-neutral-1;
+            color: $color-neutral-white;
+            font-size: 16px;
+            line-height: 24px; 
+            & > div {
+                max-width: 90%;
+            }
+            .text-truncate > div {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        &__QR {
+            width: 110px !important;
+            height: 110px !important;
+            margin-top: 12px;
+        }
+    }
+}

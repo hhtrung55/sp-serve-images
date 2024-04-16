@@ -1,0 +1,8 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+
+.recaptcha > div  {
+    display: flex;
+    justify-content: center;
+}

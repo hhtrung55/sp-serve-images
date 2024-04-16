@@ -1,0 +1,70 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.superbit-modal {
+  .ant-modal-content {
+    padding: 20px 30px 30px 30px;
+    border-radius: 16px;
+    background: $color-neutral-2;
+    color: $color-white-0;
+    box-shadow: 8px 8px 20px 0px rgba(255, 255, 255, 0.03) inset,
+      0px -3px 20px 0px rgba(255, 255, 255, 0.03) inset;
+    // @include mobileFrac {
+    //   padding: 30px 16px;
+    // }
+
+    .ant-modal-header {
+      margin-bottom: 0;
+      background: $color-neutral-2;
+      .ant-modal-title {
+        color: $color-white-0 !important;
+        font-size: $font-size-4;
+        color: $color-neutral-neutral-1;
+        font-family: 'SG-700';
+        font-weight: $font-weight-7;
+
+        // @include mobileFrac {
+        //   font-size: $font-size-7;
+        // }
+      }
+    }
+  }
+
+  .ant-modal-close-x {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--neutral-stroke, #2b3048);
+    background: var(--neutral-neutral-3, #22263b);
+    width: 26px;
+    height: 26px;
+    img {
+      width: 14px;
+      height: 14px;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .close-modal-icon {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--neutral-stroke, #2b3048);
+    background: var(--neutral-neutral-3, #22263b);
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.superbit-root-modal {
+  .ant-modal-mask {
+    background: $color-overlay;
+  }
+}
+

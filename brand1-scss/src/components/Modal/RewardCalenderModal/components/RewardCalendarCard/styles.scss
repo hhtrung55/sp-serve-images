@@ -1,0 +1,196 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.reward-calendar-card-wrapper {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid $color-neutral-stroke;
+  background: $color-neutral-3;
+  height: 200px;
+  width: 180px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  .countdown-text {
+    .ant-statistic-content-value {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  .tooltip-text {
+    color: $color-neutral-white;
+    font-size: 12px;
+    font-family: SG-400;
+  }
+
+  .tooltip-value {
+    @extend .tooltip-text;
+    font-family: SG-700;
+  }
+
+  .green-text {
+    color: $color-state-success;
+
+    .tooltip-text {
+      color: $color-state-success;
+    }
+
+    &--bold {
+      @extend .green-text;
+      font-family: SG-700;
+    }
+
+    &--clickable {
+      @extend .green-text;
+      cursor: pointer;
+      font-size: $font-size-1;
+      text-decoration: underline;
+    }
+  }
+
+  .red-text {
+    color: $color-error;
+    .tooltip-text {
+      color: $color-error;
+    }
+    &--bold {
+      @extend .red-text;
+      font-family: SG-700;
+    }
+  }
+
+  .white-text {
+    color: $color-white-0;
+    .tooltip-text {
+      color: $color-white-0;
+    }
+    &--bold {
+      @extend .white-text;
+      font-family: SG-700;
+    }
+  }
+
+  .grey-text {
+    font-size: $font-size-1;
+    font-family: SG-400;
+    color: $color-neutral-5;
+  }
+
+  .total-ticket {
+    font-size: $font-size-1;
+    font-family: SG-400;
+    color: $color-neutral-white;
+  }
+
+  &--highlight {
+    border-color: $color-box-shadow-primary;
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.5);
+  }
+
+  &:hover {
+    border-color: rgba($color-box-shadow-primary, 0.6);
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.5);
+  }
+
+  &__date {
+    font-size: $font-size-2;
+    color: $color-neutral-white;
+    font-family: SG-700;
+  }
+
+  &__amount {
+    font-size: $font-size-1;
+    font-family: SG-400;
+    color: $color-neutral-5;
+
+    &--available {
+      @extend .reward-calendar-card-wrapper__amount;
+      color: $color-neutral-white;
+    }
+
+    &--rewards {
+      @extend .reward-calendar-card-wrapper__amount;
+      color: $color-neutral-white;
+      .tooltip-text {
+        font-family: SG-700;
+        margin-top: 1px;
+      }
+    }
+  }
+
+  &__rewards {
+    margin: 0 -24px;
+
+    &--scrollable {
+      @extend .reward-calendar-card-wrapper__rewards;
+      max-height: 80px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background: $color-neutral-4;
+      }
+    }
+  }
+
+  .add-reward-btn {
+    gap: 8px;
+    background: rgba(100, 183, 73, 0.2) !important;
+    max-height: 28px;
+    box-sizing: border-box;
+    padding: 3px 12px;
+    height: fit-content !important;
+    border: none !important;
+    span {
+      color: #5ae02f;
+    }
+    &:hover {
+      background: rgba(100, 183, 73, 0.3) !important;
+    }
+    &.ant-btn-loading {
+      flex-direction: row;
+      .ant-btn-loading-icon {
+        margin-inline-end: 0 !important;
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
+
+  &__footer {
+    .available {
+      font-size: $font-size-1;
+      font-family: SG-400;
+      color: $color-neutral-white;
+
+      &--top {
+        @extend .available;
+      }
+    }
+  }
+}
+
+.icon-tooltip {
+  .tooltip-text {
+    color: $color-neutral-white;
+    font-size: 12px;
+    font-family: SG-400;
+    margin: 0px 1.5px;
+
+  }
+  .countdown-text {
+    margin-left: 2px;
+    .ant-statistic-content-value {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

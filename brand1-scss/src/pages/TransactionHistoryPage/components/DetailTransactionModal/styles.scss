@@ -1,0 +1,66 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.detail-transaction-modal-wrapper {
+  font-family: SG-400;
+  overflow-x: auto;
+  .detail-transaction-item__value{
+    @include mobile() {
+      overflow: scroll;
+      text-overflow: ellipsis;
+    }
+  }
+  .detail-transaction-wrapper {
+    margin-top: 16px;
+
+    .detail-transaction-item {
+      font-size: 0.875rem;
+      border-top: 1px solid $color-neutral-stroke;
+      padding: 12px 0;
+
+      &:first-child {
+        padding: 0;
+        padding-bottom: 12px;
+        border: none;
+      }
+
+      &:last-child {
+        padding: 0;
+        padding-top: 12px;
+      }
+
+      &__label {
+
+        min-width: 174px;
+        @include mobile() {
+          min-width: 144px;
+        }
+        color: $color-neutral-5;
+      }
+
+      &__value {
+        color: $color-neutral-white;
+        font-family: SG-400;
+  
+        a {
+          color: $color-neutral-white;
+          text-decoration: underline;
+
+          @include mobile() {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        p {
+          @include mobile() {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'src/assets/scss/_colors.scss';
+.main-helps {
+  .description-text {
+    margin-top: 10px;
+    color: var(--Neutral-Neutral-5, #6c708a);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 387px;
+  }
+
+  .main-table {
+    margin-top: 16px !important;
+  }
+  .ant-table-thead {
+    .ant-table-cell {
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 400;
+      background: $color-neutral-2_5!important;
+    }
+  }
+  .ant-table-tbody {
+    .ant-table-cell {
+      background-color: $color-neutral-3 !important;
+      line-height: 22px;
+      box-sizing: border-box;
+    }
+    .ant-table-row:nth-child(2) {
+      .ant-table-cell {
+        border-top: 1px solid #15192f;
+      }
+    }
+    .ant-table-row:last-child {
+      .ant-table-cell {
+        border-color: transparent !important;
+      }
+    }
+    .ant-table-cell {
+      padding: 8px 16px;
+    }
+  }
+}

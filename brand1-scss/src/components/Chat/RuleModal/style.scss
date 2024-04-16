@@ -1,0 +1,19 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.chat-rule__container {
+  max-width: 320px;
+  width: calc(22dvw - 45px);
+  ul {
+    list-style: disc;
+    padding: 0px;
+    list-style-position: inside;
+    li {
+      color: var(--Neutral-White, #fff);
+      font-family: SG-400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 150%;
+    }
+  }
+}

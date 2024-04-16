@@ -1,0 +1,38 @@
+@import 'src/assets/scss/responsive.scss';
+
+.casino-game__container {
+  box-sizing: border-box;
+  position: relative;
+  .head-slide {
+    height: 44px !important;
+    align-items: center;
+  }
+  .main-slide {
+    @include mobile {
+      margin-top: unset;
+    }
+  }
+  .casino-game__tab-content {
+    display: none;
+    max-height: 260px;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.tab__container {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  position: absolute;
+  right: 4.375rem;
+  top: 0rem;
+  @include mobile {
+    position: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

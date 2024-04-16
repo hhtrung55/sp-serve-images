@@ -1,0 +1,27 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.my-profile {
+  &__change-username {
+    & > div:nth-child(1) {
+      flex: 1;
+    }
+    & > div:nth-child(2) {
+      margin-top: 26px;
+      max-width: 115px;
+    }
+
+    @include maxWidth($mobile-width) {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+      }
+      & > div:nth-child(2) {
+        margin-top: 0;
+        max-width: 100%;
+        display: block;
+      }
+    }
+  }
+}

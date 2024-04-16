@@ -1,0 +1,66 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.list-game__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.list-game__wrapper {
+  @include mobile {
+    & {
+      padding: 0px;
+    }
+  }
+  container-type: inline-size;
+  padding: 32px 24px;
+  .list-game__filter {
+    margin-bottom: 32px;
+    .input-search-wrapper {
+      flex: 1;
+    }
+  }
+  .list-game__provider {
+    text-transform: uppercase;
+    color: var(--Neutral-White, #fff);
+    font-family: SG-700;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .list-game__back {
+    color: var(--Primary-Main, #0075ff);
+    font-size: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+  }
+  .list-game__load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+}
+
+@container (max-width: 740px) {
+  .list-game__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@container (max-width: 620px) {
+  .list-game__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container (max-width: 420px) {
+  .list-game__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

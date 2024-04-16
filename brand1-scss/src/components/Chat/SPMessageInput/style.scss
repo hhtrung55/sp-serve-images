@@ -1,0 +1,100 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.sb-chat-input__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  box-sizing: border-box;
+  .sb-chat-input__input {
+    flex: 1;
+    textarea {
+      resize: none;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: var(--Neutral-Neutral-1, #15192f);
+      border-radius: var(--Button-Border-8, 8px);
+      color: var(--Neutral-White, #fff);
+      padding: 9.5px 12px;
+      font-size: 14px;
+      font-family: SG-400;
+      min-height: 42px;
+      &:focus {
+        background: var(--Neutral-Neutral-1, #15192f);
+        box-shadow: 0 0 4px #2869f6;
+      }
+    }
+  }
+  .sb-chat-input__btn-send {
+    border-radius: 12px;
+    border: 0.5px solid var(--Stroke-blue, #0085ff);
+    padding: 10px;
+    width: auto;
+    height: 100%;
+    background: var(--Primary-Main, #0075ff);
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+      4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+  }
+  position: relative;
+  .sb-chat__emoji {
+    position: absolute;
+    right: 110%;
+    z-index: 9;
+    bottom: -10px;
+  }
+}
+.sb-chat__setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Neutral-Neutral-5, #6c708a);
+  font-size: 14px;
+  font-family: SG-400;
+  width: 100%;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .sb-chat__btn-rule {
+    display: flex;
+    gap: 6px;
+    color: inherit;
+  }
+}
+
+.ant-popover-content {
+  .ant-popover-inner {
+    background-color: var(--Neutral-Neutral-3, #22263b) !important;
+  }
+}
+.ant-popover-arrow::before {
+  background-color: var(--Neutral-Neutral-3, #22263b) !important;
+}
+
+em-emoji-picker {
+  --background-rgb: var(--Neutral-Neutral-2, 29, 33, 54);
+  --border-radius: 24px;
+  --category-icon-size: 24px;
+  --color-border-over: rgba(0, 0, 0, 0.1);
+  --color-border: rgba(0, 0, 0, 0.05);
+  --font-family: SG-700;
+  --font-size: 14px;
+  --rgb-accent: 255, 105, 180;
+  --rgb-background: var(--Neutral-Neutral-2, 29, 33, 54);
+  --rgb-color: 255, 255, 255;
+  --rgb-input: 255, 235, 235;
+
+  height: auto;
+  min-height: unset;
+  max-height: 400px;
+}
+

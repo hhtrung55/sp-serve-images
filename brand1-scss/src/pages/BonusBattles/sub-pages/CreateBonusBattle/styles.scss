@@ -1,0 +1,129 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.create-bonus-battle {
+  padding: 40px 0 0 24px;
+  max-width: 555px;
+  background: $color-neutral-1;
+  form .title {
+    color: $color-neutral-white;
+    font-family: SG-400;
+  }
+
+  .superbit-select .ant-select-selector,
+  .superbit-select .ant-select-open {
+    border: none !important;
+    background: $color-neutral-2 !important;
+    .ant-select-selection-placeholder {
+      -webkit-text-fill-color: $color-neutral-5;
+    }
+  }
+
+  &__input input.input-default.ant-input::placeholder,
+  &__input span.input-default input.ant-input::placeholder {
+    font-size: 16px;
+    color: $color-neutral-5;
+    -webkit-text-fill-color: $color-neutral-5;
+  }
+
+  &__input input.input-default,
+  &__input span.input-default {
+    border-radius: 12px;
+    background: $color-neutral-2;
+    color: $color-neutral-white;
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+
+    .ant-input-suffix {
+      div {
+        display: flex;
+        align-items: center;
+      }
+      img {
+        cursor: pointer;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__game {
+    cursor: pointer;
+    .ant-input-affix-wrapper-focused.input-default.input-readonly:focus-within {
+      border: 1px solid var(--primary-main, #0075ff) !important;
+      box-shadow: 0px 0px 4px 0px #2869f6 !important;
+    }
+    .ant-input-affix-wrapper-focused.ant-input-affix-wrapper-status-error.input-default.input-readonly:focus-within {
+      border: 1px solid $color-state-error !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &__title {
+    color: $color-neutral-white;
+    font-family: SG-700;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+  &__select-amount {
+    .ant-select-selector,
+    .ant-select-selection-placeholder {
+      color: $color-neutral-4;
+      font-family: SG-400;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    &.ant-select-status-error,
+    &.ant-select-status-error.ant-select-focused {
+      border: 1px solid $color-state-error;
+      border-radius: 12px;
+      box-shadow: none;
+
+      .ant-select-selector,
+      .ant-select-selector-open {
+        background: rgba(222, 48, 48, 0.15) !important;
+      }
+    }
+  }
+  .superbit-select-popup .ant-select-item.ant-select-item-option {
+    color: $color-neutral-7;
+  }
+
+  &__button {
+    height: 50px;
+    min-width: 174px;
+    padding: 13px 28px;
+  }
+  &__button.cancel-button {
+    color: $color-neutral-7;
+  }
+
+  &__button-group button:nth-child(2) {
+    width: 187px;
+  }
+
+  .superbit-switch {
+    &,
+    & > div {
+      gap: 8px !important;
+    }
+    &__label {
+      color: $color-neutral-5;
+      font-family: SG-400;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+  }
+}

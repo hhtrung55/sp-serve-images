@@ -1,0 +1,24 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.join-clan-wrapper {
+  .prefix-input {
+    font-size: 1rem;
+    font-weight: SG-400;
+    color: $color-neutral-white;
+  }
+
+  &__available-balance {
+    font-size: $font-size-3;
+    margin-top: 12px;
+
+    &-label {
+      color: $color-neutral-5;
+    }
+
+    &-value {
+      color: $color-neutral-white;
+      font-family: SG-700;
+    }
+  }
+}

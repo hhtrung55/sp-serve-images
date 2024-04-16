@@ -1,0 +1,44 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.reward-calendar-wrapper {
+  &__header {
+    .label {
+      font-size: $font-size-5;
+      color: $color-neutral-white;
+      font-family: SG-700;
+
+      &--highlight {
+        color: $color-state-success;
+      }
+
+      &--claimed {
+        font-size: $font-size-3;
+        font-family: SG-400;
+        color: $color-neutral-5;
+      }
+
+      &--action {
+        font-size: $font-size-3;
+        font-family: SG-700;
+        color: $color-main-primary;
+        cursor: pointer;
+      }
+    }
+  }
+  .not-allowed-icon{
+    cursor: not-allowed;
+  }
+  .navigate-icon {
+    cursor: pointer;
+    &:hover {
+      path {
+        fill: $color-main-primary;
+      }
+      circle {
+        fill: $color-white-0;
+      }
+    }
+  }
+}

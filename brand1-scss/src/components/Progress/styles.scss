@@ -1,0 +1,22 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.superbit-progress {
+    &.size-small.ant-progress {
+        margin: -6px 0 -6px;
+    }
+    &.size-default.ant-progress {
+        margin: -8px 0 -8px;
+    }
+    &.ant-progress-outer {
+        display: none;
+    }
+    .ant-progress-inner {
+        border-radius: 40px;
+        background: $color-neutral-stroke;
+        .ant-progress-bg {
+            border-radius: 40px;
+            background: var(--1, linear-gradient(90deg, #3E80FF 1.91%, #00E0FF 98.31%));
+        }
+    }
+}

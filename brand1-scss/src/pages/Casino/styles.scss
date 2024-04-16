@@ -1,0 +1,15 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+#casino {
+  padding: 1rem;
+  @include minWidth($lg) {
+    padding: 24px 28px;
+  }
+  @include maxWidth($sm) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.copy-wrapper {
+  display: flex;
+  cursor: pointer;
+
+  .copy-button {
+    width: 82px;
+    padding: 0;
+
+    span {
+      font-family: SG-700;
+      font-size: 1rem;
+    }
+  }
+}

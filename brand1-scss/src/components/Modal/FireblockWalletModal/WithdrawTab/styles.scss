@@ -1,0 +1,92 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.widthdraw-content {
+  &__title {
+    font-size: $font-size-3;
+    font-weight: $font-weight-7;
+    line-height: 24px;
+    color: $color-white-0;
+    margin-bottom: 8px;
+  }
+}
+
+.warning-box-wrapper {
+  .warning-box__message {
+    max-width: 545px;
+  }
+}
+
+.withdraw-section {
+  padding: 16px;
+  border-radius: 8px;
+  background: $color-neutral-3;
+  margin-bottom: 20px;
+
+  &__helper-text {
+    color: $color-neutral-5;
+    font-size: $font-size-2;
+    font-weight: $font-weight-4;
+    line-height: 150%;
+    display: flex;
+    a {
+      color: var(--primary-main, #0075ff);
+      font-size: $font-size-2;
+      font-weight: $font-weight-4;
+      line-height: 150%;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: $font-size-3;
+    color: $color-neutral-5;
+    letter-spacing: -0.16px;
+    & > span {
+      color: var(--error-color, $color-state-error);
+      margin-left: 4px;
+    }
+  }
+
+  &__amount {
+    .equal-symbol {
+      color: $color-white-0;
+      text-align: center;
+    }
+  }
+
+  .withdraw-form {
+    .ant-select {
+      height: 48px;
+      .ant-select-selector {
+        background: $color-neutral-1 !important;
+        .ant-select-selection-placeholder {
+          color: $color-neutral-4;
+        }
+      }
+      &.ant-select-status-error {
+        .ant-select-selector {
+          border-color: #ff4d4f !important;
+          background: rgba(222, 48, 48, 0.15) !important;
+        }
+      }
+    }
+  }
+}
+
+.max-btn {
+  position: absolute;
+  padding: 5px 12px;
+  height: 31px;
+  right: 10px;
+  top: 9.5px;
+  z-index: 999;
+  span {
+    display: block;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,26 @@
+.provider-container {
+  background-color: #1D2136;
+  min-height: 120px;
+  width: 100%;
+  padding: 0px 12px;
+  border-radius: 12px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  img{ 
+    width: 80%;
+  }
+  span{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    display: inline-block;
+    width: max-content;
+  }
+}

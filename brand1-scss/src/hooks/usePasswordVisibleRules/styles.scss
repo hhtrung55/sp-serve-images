@@ -1,0 +1,15 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.password-rule {
+  font-size: 0.75rem;
+  font-family: SG-400;
+  color: $color-neutral-5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &--active {
+    color: $color-white-0;
+  }
+}

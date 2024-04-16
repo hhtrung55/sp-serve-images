@@ -1,0 +1,29 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.user-page-layout {
+    padding: 30px 24px 80px 42px;
+ 
+    &__title {
+        color: $text-color-white;
+        font-family: SG-700;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+}
+
+@include mobile {
+    .user-page-layout{
+        padding: 0px 0px 0px 0px;
+    }
+    .user-page-layout-item{
+      flex-direction: column;
+      padding: 0px 0px 8px 0px;
+    }
+  }

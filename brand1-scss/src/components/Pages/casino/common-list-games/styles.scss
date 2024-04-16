@@ -1,0 +1,47 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.main-favorites-game {
+  // padding-top: 75px;
+  padding-bottom: 20px;
+}
+
+.no-data-text {
+  color: var(--neutral-neutral-5, #6c708a);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%; /* 21px */
+}
+.img-nodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.main-nodata {
+  width: 100% !important;
+  background: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.main-load-more {
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+}
+.game-list__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  @include maxWidth($sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  gap: 16px;
+}

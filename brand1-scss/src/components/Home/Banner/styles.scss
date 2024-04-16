@@ -1,0 +1,94 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.image-container {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .rowContent {
+    @include maxWidth($mobile-width) {
+      margin: 0 1rem 0 1rem;
+    }
+    margin: 0 4rem 0 4rem;
+    align-items: center;
+    .head {
+      @include maxWidth($tablet-width) {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      @include maxWidth($mobile-width) {
+        font-size: 10px;
+      }
+      @include maxWidth($xxs) {
+        font-size: 8px;
+      }
+      color: var(--neutral-white, #fff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .money {
+      @include maxWidth($tablet-width) {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+      }
+      @include maxWidth($mobile-width) {
+        font-size: 20px;
+      }
+      @include maxWidth($xxs) {
+        font-size: 16px;
+      }
+      color: var(--neutral-white, #fff);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px;
+    }
+    .description {
+      @include maxWidth($tablet-width) {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      @include maxWidth($mobile-width) {
+        font-size: 9px;
+      }
+      @include maxWidth($xxs) {
+        font-size: 7px;
+      }
+      color: var(--neutral-white, #fff);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    .image {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

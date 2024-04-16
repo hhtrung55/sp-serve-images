@@ -1,0 +1,13 @@
+.book__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 10.9375rem;
+  width: 8.625rem;
+}

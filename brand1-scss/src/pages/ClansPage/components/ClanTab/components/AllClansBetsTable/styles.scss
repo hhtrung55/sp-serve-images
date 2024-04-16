@@ -1,0 +1,67 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.all-clans-bets-table-wrapper {
+  padding: 0 24px;
+  border-top: 1px solid $color-neutral-stroke;
+  position: relative;
+  background: $color-neutral-2;
+
+  .all-clans-bets-table {
+    width: 100%;
+    table {
+      border-spacing: 0 4px;
+
+      tbody {
+        .ant-table-cell {
+          padding: 11.5px 16px !important;
+          background: $color-neutral-1 !important;
+          border: none !important;
+        }
+      }
+    }
+
+    .pnl {
+      font-size: $font-size-2;
+      font-family: SG-400;
+      color: $color-neutral-7;
+
+      &--red {
+        color: $color-state-error;
+      }
+
+      &--green {
+        color: $color-state-success;
+      }
+    }
+  }
+
+  .gradient-bottom-table {
+    bottom: -16px;
+    height: 58px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #1d2136 0%, rgba(29, 33, 54, 0.91) 58.5%, rgba(29, 33, 54, 0) 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
+
+.bets-table-tooltip {
+  .ant-tooltip-arrow {
+    &::before {
+      background: $color-neutral-3;
+    }
+  }
+
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      padding: 6px 8px;
+      border-radius: 2px;
+      background: $color-neutral-3;
+      color: $color-neutral-white;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

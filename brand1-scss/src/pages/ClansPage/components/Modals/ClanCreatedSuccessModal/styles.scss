@@ -1,0 +1,43 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-created-success-wrapper {
+  margin-top: 16px;
+
+  &__des {
+    font-size: 1rem;
+    color: $color-neutral-white;
+  }
+
+  .copy-section-wrapper {
+    padding: 8px 16px;
+    border-radius: 16px;
+    background: $color-neutral-1;
+
+    &__link {
+      font-size: 1rem;
+      color: $color-main-primary;
+      font-family: SG-500;
+      cursor: pointer;
+      @include mobile {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: calc(100% - 80px);
+        white-space: nowrap;
+      }
+    }
+  }
+  @include mobile {
+    button {
+      height: 44px;
+    }
+    .copy-wrapper {
+      button {
+        height: 31px !important;
+        padding: 5px 12px !important;
+      }
+    }
+  }
+}

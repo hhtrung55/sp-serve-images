@@ -1,0 +1,16 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+#homepage {
+  // padding: 1rem;
+  @include minWidth($md) {
+    // padding: 2rem;
+    padding: 24px 28px;
+  }
+  .live-casino-game__wrapper {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,118 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.bonus-battle-wrapper {
+  margin-right: 16px;
+  width: fit-content;
+
+  &__top {
+    padding: 12px;
+    padding-bottom: 8px;
+    background: $color-neutral-2;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    .image-game {
+      border-radius: 8px;
+    }
+
+    .bonus-battle-item-wrapper {
+      font-size: 0.75rem;
+
+      &__label {
+        font-size: 0.75rem;
+        color: $color-neutral-5;
+      }
+
+      &__data {
+        color: $color-neutral-white;
+
+        .creator-wrapper {
+          &__image {
+            border-radius: 100%;
+          }
+
+          &__ellipse-text {
+            font-size: 0.75rem;
+            width: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 12px;
+    padding-top: 4px;
+    background: $color-neutral-2;
+
+    &-content {
+      width: 100%;
+      border-radius: 8px;
+      padding: 4px 16px;
+      background: $color-neutral-1;
+      color: $color-neutral-white;
+
+      .bottom-content {
+        &__top {
+          font-size: 0.875rem;
+          font-family: SG-500;
+        }
+
+        &__bottom {
+          font-size: 0.75rem;
+          font-family: SG-400;
+
+          .live-text {
+            font-family: SG-500;
+            color: $color-state-error;
+            position: relative;
+
+            &::before {
+              content: '';
+              position: absolute;
+              background: $color-state-error;
+              border-radius: 100%;
+              width: 4px;
+              height: 4px;
+              top: 50%;
+              transform: translateY(-50%);
+              left: -5px;
+            }
+          }
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: $color-neutral-1;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: $color-neutral-1;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}

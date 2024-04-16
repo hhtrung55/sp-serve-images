@@ -1,0 +1,24 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.ellipsis-text {
+    font-family: SG-400;
+    font-size: 16px;
+    color: $color-neutral-white;
+}
+
+.ellipsis-tooltip {
+    background:  $color-neutral-3;
+    border-radius: 2px;
+    border: none !important;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.30) !important;
+    outline: none;
+    margin: -6px; 
+    padding: 6px 8px;
+}
+
+.ant-tooltip {
+    .--antd-arrow-background-color {
+        background:  $color-neutral-3;
+    }
+}

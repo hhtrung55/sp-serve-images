@@ -1,0 +1,161 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.battle-detail {
+  padding: 40px 24px;
+  width: 100%;
+
+  &__container {
+    flex: 1;
+    overflow-x: auto;
+  }
+
+  &__card {
+    // width: 224px;
+    .battle-card {
+      width: 212px;
+    }
+  }
+
+  &__player-quantity {
+    color: $color-neutral-white;
+    font-family: SG-700;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+  }
+
+  &__copy-button,
+  &__copied-button {
+    border-radius: 8px;
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    background: $color-neutral-4;
+    height: 44px;
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    padding: 10px 20px;
+    color: $color-neutral-7;
+    font-family: SG-700;
+    font-weight: 700;
+  }
+
+  &__copy-button {
+    width: 182px;
+    &:hover {
+      color: $color-hover-button;
+      border-color: $color-hover-button;
+      svg {
+        fill: $color-hover-button;
+      }
+    }
+  }
+
+  &__copied-button {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &__username {
+    font-size: 14px;
+    // line-height: 21px;
+  }
+
+  &__table {
+    width: 100%;
+    .ant-table-cell.ant-table-cell-scrollbar {
+      display: none;
+    }
+
+    .ant-table-header {
+      height: 44px;
+    }
+
+    .ant-table-row {
+      height: 42px !important;
+    }
+
+    .ant-table .ant-table-thead .ant-table-cell {
+      // background-color: transparent;
+      font-weight: 400;
+      padding: 11.5px 16px;
+      line-height: 21px;
+    }
+
+    .ant-table {
+      // border-width: 6px !important;
+      .ant-table-body {
+        margin-top: -6px;
+      }
+      .ant-table-tbody .ant-table-row .ant-table-cell {
+        color: $color-neutral-7;
+        padding: 9px 16px;
+        line-height: 21px;
+      }
+    }
+
+    &.ant-table-wrapper .ant-table-cell {
+      border-color: $color-neutral-1;
+      // border-bottom: 6px solid transparent;
+    }
+
+    .ellipsis-text {
+      color: $color-neutral-7;
+    }
+  }
+
+  &__close-balance {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 0.5px solid $color-neutral-stroke;
+    background: $color-neutral-2;
+    height: 132px;
+    margin-top: 2px;
+
+    &__desc {
+      color: $color-neutral-7;
+      font-family: SG-400;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    &__button {
+      border-radius: 8px;
+      border: 1px solid $color-stroke-blue;
+      background: $color-main-primary;
+      box-shadow: 0px 0px 10px 0px #2869f6b3, 5px 5px 10px 0px #abcdff inset,
+        4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+      display: flex;
+      height: 37px;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      color: $color-neutral-white;
+      font-family: SG-700;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+    }
+  }
+
+  .green-text {
+    color: $color-state-success;
+  }
+
+  .red-text {
+    color: $color-state-error;
+  }
+
+  &__rank-icon {
+    object-fit: contain;
+    margin: -2px 0;
+    height: 24px !important;
+  }
+}

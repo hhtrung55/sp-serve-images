@@ -1,0 +1,10 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.total-reward-number {
+  color: $color-neutral-green-2;
+  font-size: $font-size-5;
+  font-weight: $font-weight-7;
+  line-height: 32px;
+}

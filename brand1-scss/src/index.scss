@@ -1,0 +1,44 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+// @import '~slick-carousel/slick/slick.css';
+// @import '~slick-carousel/slick/slick-theme.css';
+
+@font-face {
+  font-family: 'SG-700';
+  src: url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SG-600';
+  src: url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SG-500';
+  src: url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SG-400';
+  src: url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SG-300';
+  src: url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf) format('truetype');
+}
+
+html {
+  background-color: $color-neutral-2;
+  color: $color-neutral-7;
+  font-size: 14px;
+  @include minWidth($sm) {
+    font-size: 16px;
+  }
+}
+
+html * {
+  font-family: SG-400;
+  // font-size: 1rem;
+}

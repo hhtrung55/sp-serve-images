@@ -1,0 +1,21 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import '../styles.scss';
+
+.input-pasword-wrapper {
+    color: $color-neutral-white;
+    .password-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .anticon.ant-input-password-icon, .password-icon {
+        color: $color-neutral-4 !important;
+    }
+
+    .ant-input-password.input-default input {
+        height: 46px;
+        margin: -4px 0;
+        padding: 12px 0;
+    }
+}

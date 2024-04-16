@@ -1,0 +1,12 @@
+.sp-message__item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-stroke, #2b3048);
+  background: var(--neutral-neutral-3, #22263b);
+  box-shadow: 4px 4px 4px #41445940 inset, -4px -4px 4px #41445940 inset;
+}
+.sp-message__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

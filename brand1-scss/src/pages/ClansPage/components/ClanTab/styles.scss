@@ -1,0 +1,377 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-game-wrapper {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  .playing-text {
+    padding: 12px 24px;
+    text-align: center;
+    font-size: $font-size-2;
+    color: $color-state-warning;
+    font-family: SG-500;
+    text-shadow: 0px 0px 3px rgba(255, 205, 76, 0.75);
+  }
+
+  .clan-item {
+    font-size: $font-size-2;
+    font-family: SG-400;
+    line-height: 150%;
+
+    &__label {
+      color: $color-neutral-5;
+    }
+
+    &__value {
+      color: $color-neutral-white;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      overflow: hidden;
+      font-size: toRem(14);
+
+      &--green {
+        color: $color-state-success;
+      }
+
+      &--red {
+        color: $color-state-error;
+      }
+
+      .clan-owner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+      }
+    }
+  }
+
+  .game-banner-default-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('src/assets/icons/clans/clan-banner-game-default.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--no-img {
+      background: $color-neutral-2;
+      z-index: 10000000;
+    }
+
+    &__button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__text {
+      font-size: $font-size-7;
+      font-family: SG-700;
+      color: $color-neutral-white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+    }
+
+    &__loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+    }
+  }
+
+  &__clan-info {
+    padding: 16px;
+    width: 250px;
+    max-width: 250px;
+    height: 100%;
+    background: $color-neutral-2;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    @include between(1200px, 1420px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &--left {
+      .clan-name {
+        font-size: $font-size-3;
+        font-family: SG-700;
+        color: $color-neutral-white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .pnl-chart-container {
+        width: 100%;
+        height: 90px;
+        background: $color-neutral-1;
+        border-radius: 12px;
+
+        & > div {
+          width: 100%;
+          height: 90% !important;
+        }
+      }
+    }
+
+    &--right {
+      flex-direction: column-reverse;
+      flex: 1;
+    }
+
+    .pnl-chart-empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include mobile {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  }
+
+  &__game-wrapper {
+    flex: 1;
+    border-right: 1px solid $color-neutral-stroke;
+    background: $color-neutral-2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    min-width: 0px;
+    min-height: auto;
+
+    @include mobile {
+      border-top: 1px solid $color-neutral-stroke;
+      border-right: none;
+      border-top-left-radius: 0px;
+      min-width: auto;
+      min-height: 0px;
+
+      .tool-bar {
+        padding: 16px !important;
+      }
+    }
+
+    .game-screen {
+      .iframe-wrapper {
+        position: relative;
+        padding-bottom: 56.243%;
+
+        .iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .tool-bar {
+      padding: 16.5px 24px;
+
+      .pointer-icon {
+        cursor: pointer;
+      }
+
+      &__left {
+        // width: max-content;
+        width: calc(100% - 50px);
+        & > div {
+          width: 100%;
+        }
+
+        .player-info-container {
+          @include mobile {
+            width: max-content;
+            max-width: 55%;
+          }
+        }
+
+        .player-info {
+          @include mobile {
+            max-width: calc(100% - 70px);
+          }
+          .playing-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+
+        button {
+          padding: 5px 12px !important;
+          font-size: $font-size-2 !important;
+          height: 100%;
+          text-transform: none;
+        }
+        img {
+          min-width: 22px;
+        }
+        .game-name {
+          max-width: 37%;
+          white-space: nowrap;
+        }
+      }
+
+      &__right {
+        .swap-icon {
+          margin-right: 16px;
+        }
+        .volume-wrapper {
+          width: 90px;
+        }
+        button {
+          padding: 5px 12px !important;
+          font-size: $font-size-2 !important;
+          height: 100%;
+          text-transform: none;
+          margin-right: 16px;
+        }
+        @include mobile {
+          justify-content: space-between;
+          .swap-icon {
+            display: none;
+            margin-right: 8px;
+          }
+          button {
+            height: 31px;
+          }
+        }
+      }
+
+      @include mobile {
+        &.toolbar-playing {
+          flex-direction: column;
+
+          .tool-bar__left {
+            width: 100%;
+            .player-info-container {
+              max-width: 65%;
+            }
+          }
+
+          .tool-bar__right {
+            @include mobile {
+              width: 100%;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--horizontal {
+    flex-direction: column;
+
+    .clan-item {
+      .clan-owner {
+        max-width: 100px;
+      }
+    }
+
+    .clan-game-wrapper {
+      &__clan-info {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 24px;
+        border-radius: 0;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+        &--left {
+          .clan-name {
+            width: 200px;
+
+            span {
+              width: 200px;
+            }
+          }
+
+          .pnl-chart-container {
+            width: 72px;
+            height: 20px;
+            background: transparent;
+            border-radius: 0;
+          }
+        }
+
+        &--right {
+          flex-direction: row;
+        }
+      }
+
+      &__game-wrapper {
+        border-right: none;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 0;
+
+        .iframe-wrapper {
+          padding-bottom: 0;
+        }
+
+        .game-screen {
+          aspect-ratio: auto 1/1;
+
+          @include maxWidth($desktop-width - 1) {
+            aspect-ratio: auto 1/0.8;
+          }
+
+          @include mobile {
+            aspect-ratio: auto 1/0.7;
+          }
+
+          .playing-text {
+            padding: 0 24px 12px;
+          }
+        }
+
+        .tool-bar {
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    &__game-wrapper {
+      max-width: 100%;
+    }
+    &__clan-info {
+      width: 100%;
+      max-width: 100%;
+    }
+    &--horizontal {
+      .clan-game-wrapper__clan-info {
+        flex-direction: column;
+        gap: 16px !important;
+        .clan-item {
+          &__value {
+            font-size: toRem(14);
+            line-height: 150%;
+          }
+        }
+      }
+      .clan-game-wrapper__clan-info--right {
+        flex-direction: column;
+        gap: 16px !important;
+        .balance-wrapper {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

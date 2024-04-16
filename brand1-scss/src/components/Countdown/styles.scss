@@ -1,0 +1,25 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.superbit-countdown {
+  .ant-statistic-content {
+    line-height: 1px !important;
+  }
+  .ant-statistic-content-value {
+    color: $color-white-0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  &__small {
+    .ant-statistic-content-value {
+      font-size: 8px;
+    }
+  }
+
+  &__normal {
+    .ant-statistic-content-value {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import '../styles.scss';
+
+.input-address-wrapper {
+  color: #fff;
+  .suffix-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .input-default {
+    padding: 13px 16px;
+  }
+}

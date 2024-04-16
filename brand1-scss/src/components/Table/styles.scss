@@ -1,0 +1,115 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.superbit-table {
+  .ant-table {
+    border-radius: 16px;
+    background: $color-neutral-1;
+    font-family: SG-400;
+
+    .ant-table-thead {
+      border-radius: 16px;
+
+      .ant-table-cell {
+        background: $color-neutral-3;
+        color: $color-neutral-5;
+        border-bottom: none !important;
+        font-size: 0, 875rem !important;
+
+        &::before {
+          display: none;
+        }
+
+        // &:first-child {
+        //   border-start-start-radius: 16px !important;
+        // }
+
+        // &:last-child {
+        //   border-start-end-radius: 16px !important;
+        // }
+      }
+    }
+
+    .ant-table-body {
+      border-radius: 0 0 16px 16px;
+    }
+
+    .ant-table-cell-scrollbar {
+      box-shadow: none;
+    }
+
+    .ant-table-tbody {
+      .ant-table-row {
+        .ant-table-cell {
+          background: #1d2136;
+          color: $color-neutral-6;
+          border-color: $color-neutral-1 !important;
+          border-width: 2px !important;
+          font-size: 1rem;
+          margin: auto 0;
+        }
+
+        // &:last-child {
+        //   .ant-table-cell {
+        //     &:first-child {
+        //       border-end-start-radius: 16px !important;
+        //     }
+
+        //     &:last-child {
+        //       border-end-end-radius: 16px !important;
+        //     }
+        //   }
+        // }
+      }
+
+      .ant-table-placeholder {
+        .ant-table-cell {
+          background: $color-neutral-1 !important;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .page-item-container {
+    width: 32px;
+    height: 32px;
+    background: $color-neutral-3;
+    border-radius: 100%;
+    color: $color-neutral-5;
+    align-self: center;
+    font-family: SG-400;
+
+    @include mobile {
+      margin-top: 10px;
+    }
+    &:hover {
+      background: $color-main-primary;
+      color: $color-white-0;
+    }
+  }
+
+  .ant-table-pagination {
+    padding-right: 8px;
+    .ant-pagination-item-active {
+      background: transparent !important;
+      border: transparent !important;
+
+      .page-item-container {
+        background: $color-main-primary;
+        color: $color-neutral-white;
+      }
+    }
+  }
+  .ant-pagination-disabled {
+    .page-item-container {
+      background: $color-neutral-3 !important;
+      svg {
+        path {
+          fill: $color-neutral-4 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import 'src/assets/scss/variable.scss';
+
+.live-casino-game {
+  * {
+    box-sizing: border-box;
+  }
+  padding: 1rem;
+  background-color: $color-neutral-neutral-2;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__tab {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0.25rem 0.5rem;
+    background-color: #1f2330;
+    width: fit-content;
+    .tab__list {
+      display: flex;
+      .tab__item {
+        padding: 0.25rem;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: SG-500;
+        color: $color-white-0;
+        justify-content: center;
+        font-size: 0.875rem;
+        cursor: pointer;
+      }
+      .tab__item--active {
+        color: $color-neutral-line;
+        background-color: #cbd7ff0e;
+        border-radius: 2px;
+      }
+    }
+    .tab__live-icon {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: $color-states-live;
+      margin-right: 0.3rem;
+    }
+    .tab__title {
+      font-family: inherit;
+      text-transform: none;
+    }
+  }
+  .live-casino-game__slider {
+    display: flex;
+    gap: 1rem;
+    .slider__item {
+      display: flex;
+      max-width: 86px;
+      flex-direction: column;
+      cursor: pointer;
+      border-radius: 12px;
+      .slider__game-logo {
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+  .member {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    .member__rank {
+      width: 0.8rem;
+    }
+    .member__name {
+      font-size: 0.75rem;
+      font-family: SG-500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .payout {
+    font-family: SG-500;
+    font-size: 0.75rem;
+    color: $color-states-success;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.all-ranks-modal {
+  &__header {
+    h2 {
+      color: $color-white-0;
+      font-size: $font-size-7;
+      font-weight: $font-weight-7;
+      line-height: 150%;
+    }
+    button {
+      padding: 0;
+      span {
+        color: $color-main-primary;
+        font-size: $font-size-3;
+        font-weight: $font-weight-7;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+    .superbit-empty-wrapper {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+  }
+}

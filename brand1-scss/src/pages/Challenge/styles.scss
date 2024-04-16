@@ -1,0 +1,76 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.challenge-page {
+  padding: 24px 40px;
+
+  @include mobile {
+    padding: 16px;
+  }
+
+  &__title {
+    font-size: $font-size-7;
+    color: $color-white-0;
+    margin-bottom: 16px;
+    font-family: SG-700;
+  }
+  &__tabs {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+  }
+
+  &__filter {
+    margin-top: 26px;
+    @include mobile {
+      flex-direction: column;
+      & > div:first-child {
+        flex: 1;
+      }
+    }
+    .input-search-wrapper {
+      flex: 1;
+      .input-default {
+        height: 44px;
+      }
+    }
+
+    .sort-select-wrapper {
+      @include mobile {
+        flex: unset;
+        width: fit-content;
+      }
+    }
+  }
+
+  &__list {
+    // display: grid;
+    margin-top: 30px;
+    // grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
+    // gap: 16px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 599px) {
+      grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+      gap: 12px 6px;
+    }
+  }
+
+  &__empty-list {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 123px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__load-more {
+    margin-top: 42px;
+  }
+}

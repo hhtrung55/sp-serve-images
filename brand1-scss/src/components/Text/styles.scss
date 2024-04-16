@@ -1,0 +1,16 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.superbit-text {
+  line-height: 1;
+  &__normal {
+    color: $color-white-0;
+  }
+  &__success {
+    color: $color-state-success;
+  }
+
+  &__warning {
+    color: $color-state-error;
+  }
+}

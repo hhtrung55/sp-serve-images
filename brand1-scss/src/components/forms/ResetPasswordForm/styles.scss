@@ -1,0 +1,49 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.reset-password-form {
+    width: 385px;
+
+    &__title div {
+      color: var(--neutral-white, #FFF);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &__back {
+      color: var(--primary-main, #0075ff);
+      font-weight: 700;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+}
+.text-title{
+    color: $color-neutral-5;
+}
+.button-confirm { 
+    border-radius: 8px;
+    max-width: 100% ;
+    max-height: 50px !important;
+    border: 1px solid var(--Stroke-blue, #0085FF);
+    background: var(--primary-main, #0075FF);
+    /* Effect 5 */
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.70), 0px 3px 10px 0px #ABCDFF inset, 4px -5px 10px 0px rgba(12, 59, 223, 0.70) inset;
+}
+.password-rule {
+  font-size: 0.75rem;
+  font-family: SG-400;
+  color: $color-neutral-5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &--active {
+    color: $color-white-0;
+  }
+}

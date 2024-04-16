@@ -1,0 +1,83 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.reward-menu-dropdown {
+  border-radius: 8px;
+  background: $color-neutral-3;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  width: 350px;
+  right: 24px !important;
+  .reward-menu {
+    &__item {
+      .reward-icon {
+        width: 22.485px;
+        height: 24px;
+      }
+      &__label {
+        color: $color-white-0;
+        font-size: $font-size-2;
+        font-weight: $font-weight-5;
+        line-height: 22px;
+        cursor: pointer;
+      }
+      &__pending-reward {
+        color: $color-neutral-green-2;
+        font-size: $font-size-1;
+        font-weight: $font-weight-5;
+        line-height: 150%;
+      }
+
+      .reward-link {
+        cursor: pointer;
+      }
+    }
+
+    .contained-default {
+      width: fit-content;
+      min-width: 76px;
+      padding: 5px 12px;
+      font-size: 14px;
+      height: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--submit {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      &--type1 {
+        font-size: $font-size-3;
+        font-weight: $font-weight-7;
+        line-height: 24px;
+        padding: 10px 20px !important;
+        height: 44px;
+      }
+    }
+  }
+}
+
+.reward-menu-header {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.reward-menu-button {
+  position: relative;
+  .reward-menu-notification {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: $color-state-error;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8px;
+    right: -4px;
+    font-size: 12px;
+  }
+}

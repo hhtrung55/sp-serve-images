@@ -1,0 +1,12 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.challenge-won-modal {
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+@import 'src/assets/scss/variable.scss';
+
+@mixin minWidth($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin maxWidth($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin between($bp1, $bp2) {
+  @media screen and (min-width: $bp1) and (max-width: $bp2) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include maxWidth(#{$tablet-width - 1}) {
+    @content;
+  }
+}
+
+
+@mixin toRem($property, $value) {
+  #{$property}: calc($value / 16)rem;
+}
+
+@function toRem($value) {
+  $remValue: calc($value / 16) + rem; 
+  @return $remValue;
+}

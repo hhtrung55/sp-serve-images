@@ -1,0 +1,24 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.email-address-wrapper {
+    @include mobile {
+        flex-direction: column;
+        gap: 16px;
+        & > div {
+            flex-direction: column;
+            gap: 4px;
+            align-items: start;
+        }
+        & > button {
+            width: fit-content !important;
+            align-self: flex-end;
+        }
+    }
+}
+
+.email-text {
+    color: $color-neutral-white;
+    font-weight: 700;
+}

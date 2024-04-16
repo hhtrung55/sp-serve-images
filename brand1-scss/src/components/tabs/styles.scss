@@ -1,0 +1,86 @@
+@import 'src/assets/scss/variable.scss';
+
+.custom-tab {
+  .ant-tabs-nav {
+    width: fit-content;
+    // margin-bottom: 0.4rem !important;
+    &::before {
+      display: none;
+    }
+
+    .ant-tabs-nav-list {
+      padding: 8px;
+      border-radius: 12px;
+    }
+    margin-bottom: 24px;
+
+    .ant-tabs-tab {
+      padding: 0;
+      margin: 0;
+      &-active {
+        .ant-tabs-tab-btn {
+          color: $text-color-white !important;
+          border-radius: 8px;
+        }
+      }
+
+      .ant-tabs-tab-btn {
+        text-align: center;
+        min-width: 95px;
+        color: $color-neutral-5;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 16px;
+        border-radius: 8px;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+  }
+
+  &__primary {
+    .ant-tabs-nav-list {
+      background: $color-neutral-1;
+    }
+    .ant-tabs-tab {
+      &-active {
+        .ant-tabs-tab-btn {
+          border: 1px solid var(--Stroke-blue, #0085ff);
+          background: var(--primary-main, #0075ff);
+          box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+            4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+        }
+      }
+    }
+  }
+
+  &__secondary {
+    .ant-tabs-nav {
+      .ant-tabs-nav-list {
+        padding: 4.5px 4px;
+        border-radius: 12px;
+        background: $color-neutral-3;
+      }
+      margin-bottom: 0;
+    }
+
+    .ant-tabs-tab {
+      .ant-tabs-tab-btn {
+        padding: 5px 12px !important;
+        min-width: 100% !important;
+      }
+
+      &-active {
+        .ant-tabs-tab-btn {
+          font-family: SG-700;
+
+          border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+          background: var(--neutral-neutral-4, #414459);
+          box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+        }
+      }
+    }
+  }
+}

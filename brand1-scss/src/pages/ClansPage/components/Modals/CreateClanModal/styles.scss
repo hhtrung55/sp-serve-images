@@ -1,0 +1,18 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+
+.create-clan-modal-wrapper {
+  margin-top: 16px;
+
+  &__des {
+    font-size: 1rem;
+    color: $color-neutral-white;
+  }
+
+  &__prefix-input {
+    font-size: 1rem;
+    font-weight: SG-400;
+    color: $color-neutral-white;
+  }
+}

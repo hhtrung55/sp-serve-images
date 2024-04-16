@@ -1,0 +1,28 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.total-reward {
+  display: flex;
+  padding: 16px 24px;
+  background-color: $color-neutral-2;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  border-radius: 16px;
+  &__item {
+    &__label {
+      color: $color-neutral-5;
+      font-size: $font-size-3;
+      font-weight: $font-weight-4;
+      line-height: 24px;
+    }
+
+    &__value {
+      color: $color-white-0;
+      font-size: $font-size-3;
+      font-weight: $font-weight-4;
+      line-height: 32px;
+    }
+  }
+}

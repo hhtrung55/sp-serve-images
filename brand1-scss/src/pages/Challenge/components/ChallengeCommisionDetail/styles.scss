@@ -1,0 +1,129 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.challenge-commision-detail {
+  .ant-modal-content {
+    padding: 0;
+    border-radius: 16px;
+    background: var(--Neutral-Neutral-2, #1d2136);
+    overflow: hidden;
+
+    .ant-modal-close-x {
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid var(--neutral-stroke, #2b3048);
+      background: var(--neutral-neutral-3, #22263b);
+      width: 26px;
+      height: 26px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  .ant-table-column-has-sorters {
+    background-color: transparent !important;
+  }
+  .header-title {
+    color: #6c708a;
+    font-size: toRem(14);
+    font-family: SG-400;
+    line-height: 150%;
+    margin-right: 4px;
+  }
+  .sort-icon {
+    &.sort-icon-active {
+      color: #0075ff;
+    }
+    &.sort-icon-des {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__table {
+    padding-left: 16px;
+    padding-top: 6px;
+    .ant-table-thead {
+      .ant-table-cell {
+        color: $color-neutral-5;
+        background-color: $color-neutral-3;
+        border-bottom: none;
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .ant-table {
+      background: transparent;
+    }
+    .ant-table-tbody {
+      .ant-table-cell {
+        background-color: $color-neutral-2;
+        color: $color-neutral-6;
+        font-family: SG-400;
+        border-bottom: none;
+        &.ant-table-cell-row-hover {
+          background: unset;
+        }
+      }
+
+      .ant-table-placeholder:hover {
+        background: $color-neutral-2 !important;
+        td {
+          background: $color-neutral-2 !important;
+        }
+      }
+      // tr.ant-table-row-level-1:hover > td {
+      //   background: unset;
+      // }
+    }
+    .ant-pagination {
+      margin-top: 0px !important;
+    }
+
+    .page-item-container {
+      width: 32px;
+      height: 32px;
+      background: $color-neutral-3;
+      border-radius: 100%;
+      color: $color-neutral-5;
+      align-self: center;
+      font-family: SG-400;
+
+      @include mobile {
+        margin-top: 10px;
+      }
+      &:hover {
+        background: $color-main-primary;
+        color: $color-white-0;
+      }
+      .ant-table-pagination {
+        padding-right: 8px;
+        .ant-pagination-item-active {
+          background: transparent !important;
+          border: transparent !important;
+
+          .page-item-container {
+            background: $color-main-primary;
+            color: $color-neutral-white;
+          }
+        }
+      }
+      .ant-pagination-disabled {
+        .page-item-container {
+          background: $color-neutral-3 !important;
+          svg {
+            path {
+              fill: $color-neutral-4 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import 'src/assets/scss/variable.scss';
+
+
+.username-modal {
+    &__title {
+        color: $color-neutral-white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    &__content {
+        color: $color-neutral-5;
+        font-size: $font-size-2;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        &.form-item .title {
+            font-size: $font-size-2;
+        }
+        &.form-item .ant-form-item-label {
+            padding: 0;
+        }
+    }
+    
+    
+    &__item input.ant-input {
+        padding: 12px;
+        font-size: $font-size-3;
+        &::placeholder {
+            color: $color-neutral-4;
+            font-size: $font-size-3;
+        }
+    }
+
+    
+    &__button {
+        font-weight: 700;
+    }
+    
+    .text-require {
+        color: $color-state-error
+    }
+}

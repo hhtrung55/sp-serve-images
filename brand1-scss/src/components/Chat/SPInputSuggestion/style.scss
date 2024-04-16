@@ -1,0 +1,26 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.suggestion-item {
+  font-family: SG-400;
+  font-size: 14px;
+  color: var(--Neutral-Neutral-8, #eff0f7);
+  padding: 9px 16px;
+  cursor: pointer;
+
+  &.selected {
+    color: var(--Primary-Main, #0075ff);
+  }
+}
+.sb-chat-input__input .str-chat__textarea {
+  position: relative;
+}
+.str-chat__suggestion-list-container {
+  background: var(--Neutral-Stroke, #2b3048) !important;
+  z-index: 10;
+  position: absolute;
+  * {
+    background: var(--Neutral-Stroke, #2b3048);
+  }
+}

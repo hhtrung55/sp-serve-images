@@ -1,0 +1,30 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.cancel-creation {
+    &__title {
+        color: $color-neutral-white;
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 160% */
+    }
+
+    &__description {
+        color: $color-neutral-6;
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    &__button {
+        flex: 1;
+        height: 50px;
+    }
+}

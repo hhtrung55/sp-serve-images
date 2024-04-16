@@ -1,0 +1,21 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.checked-icon-tag {
+    &__icon {
+        width: 24px;
+        height: 24px;
+        // @include mobile {
+        //     width: 16px;
+        //     height: 16px;
+        // }
+    }
+    
+    &__text {
+        font-size: 16px;
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+}

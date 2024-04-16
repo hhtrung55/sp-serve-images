@@ -1,0 +1,27 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.authentication-wrapper {
+  .authentication-title {
+    font-family: SG-700;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    color: $color-white-0;
+  }
+
+  .authentication-text-center {
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--neutral-neutral-5, #6c708a);
+    font-family: SG-400;
+  }
+
+  @include mobile {
+    .authentication-footer {
+      gap: 12px;
+      justify-content: center;
+    }
+}
+}

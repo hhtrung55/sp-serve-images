@@ -1,0 +1,208 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.main-header-casino {
+  .ant-input-affix-wrapper {
+    .ant-input {
+      color: var(--neutral-neutral-8, #eff0f7);
+      border-radius: 12px;
+      background: var(--neutral-neutral-3, #22263b);
+      border-color: var(--neutral-neutral-3, #22263b);
+      border-radius: 8px;
+    }
+    height: 100%;
+    border-radius: 12px;
+    background: var(--neutral-neutral-3, #22263b);
+    border-color: var(--neutral-neutral-3, #22263b);
+    &-focused {
+      border-radius: 12px;
+      border: 1px solid var(--Primary-Main, #0075FF);
+      background: $color-neutral-1;
+      box-shadow: 0px 0px 4px 0px $color-box-shadow-primary;
+      .ant-input {
+        background: $color-neutral-1;
+      }
+    }
+    input {
+      &::placeholder {
+        color: $color-neutral-5;
+        font-size: 14px;
+      }
+    }
+  }
+  .anticon {
+    color: white;
+  }
+  .slick-prev {
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    @include maxWidth($sm) {
+      left: 4px;
+    }
+  }
+  .slick-next {
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    @include maxWidth($sm) {
+      right: 4px;
+    }
+  }
+  .slick-disabled {
+    cursor: initial;
+  }
+  .btn-active {
+    border-radius: 8px;
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    background: $color-neutral-4;
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    color: var(--neutral-neutral-8, #eff0f7);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    :hover {
+      color: var(--neutral-neutral-8, #eff0f7);
+    }
+  }
+  .btn-inactive {
+    color: var(--neutral-neutral-5, #6c708a);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+  }
+
+  button {
+    :hover {
+      color: var(--neutral-neutral-5, #6c708a);
+    }
+    ::after {
+      color: var(--neutral-neutral-5, #6c708a);
+    }
+    ::before {
+      color: var(--neutral-neutral-5, #6c708a);
+    }
+  }
+  :where(.css-dev-only-do-not-override-2q8sxy).ant-btn-link:not(:disabled):not(.ant-btn-disabled):hover {
+    color: var(--neutral-neutral-5, #6c708a);
+  }
+  .main-btn-next-prev {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  :where(.css-dev-only-do-not-override-2q8sxy).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: var(--neutral-neutral-8, #eff0f7);
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+  }
+  .slick-slider.slick-initialized {
+    border-radius: 12px;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    background: $color-neutral-3;
+    padding: 4.5px 4px;
+  }
+
+  button.slick-arrow.slick-prev {
+    display: none !important;
+  }
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+
+  .dropdown-sort-by {
+    min-width: fit-content;
+    
+    & > div:first-child{
+      min-width: 72px;
+    }
+
+    & > div:nth-child(2){
+      margin-left: -11px;
+    }
+  }
+
+  .search-input {
+    padding: 9.5px 16px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    input {
+      font-family: SG-400;
+      margin: 0;
+    }
+    span {
+      margin-right: 8px;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .ant-input-suffix {
+      margin: 0 0 0 3px;
+      &, span {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    .ant-input-prefix {
+      img {
+        border-radius: 0;
+      }
+    }
+    @include maxWidth($sm) {
+      width: 100%;
+    }
+  }
+}
+.slider-column {
+  overflow: hidden;
+  @include minWidth($sm) {
+    min-width: 625px;
+  }
+}
+.search-column {
+  @include maxWidth($sm) {
+    margin-top: 16px;
+  }
+  @include maxWidth($xl) {
+    margin-bottom: 8px;
+  }
+}
+.provider-column {
+  @include maxWidth($md) {
+    margin-bottom: 8px;
+  }
+}
+.main-slick-default {
+  .slick-list {
+    margin: 0px 40px 0px 0px;
+    @include maxWidth($sm) {
+      margin: 0px 20px 0px 0px;
+    }
+  }
+}
+.main-slick-next {
+  .slick-list {
+    margin: 0px 40px 0px 35px;
+    @include maxWidth($sm) {
+      margin: 0px 20px 0px 20px;
+    }
+  }
+}
+.row-select {
+  margin-top: 34px;
+}
+
+.bonus-play-wrapper-button {
+  display: flex;
+  padding: 8px 0px;
+  align-items: center;
+  justify-content: end;
+}

@@ -1,0 +1,41 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.g2-tooltip {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.pnl-chart-tooltip-profit {
+  display: block;
+  border-radius: 2px;
+  background: $color-state-success;
+  font-size: $font-size-1;
+  font-weight: $font-weight-4;
+  line-height: 150%;
+  color: $color-white-0;
+  padding: 4px 7px;
+}
+
+.pnl-chart-tooltip-loss {
+  display: block;
+  border-radius: 2px;
+  background: $color-state-error;
+  font-size: $font-size-1;
+  font-family: SG-400;
+  line-height: 150%;
+  color: $color-white-0;
+  padding: 4px 7px;
+}
+
+.pnl-chart-tooltip-draw {
+  display: block;
+  border-radius: 2px;
+  background: $color-neutral-white-1;
+  font-size: $font-size-1;
+  font-weight: SG-400;
+  line-height: 150%;
+  color: $color-grey-5;
+  padding: 4px 7px;
+}

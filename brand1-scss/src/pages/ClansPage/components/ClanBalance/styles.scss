@@ -1,0 +1,27 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-balance-wrapper {
+  &__label {
+    font-size: $font-size-2;
+    font-family: SG-400;
+    color: $color-neutral-5;
+  }
+
+  &__value-wrapper {
+    border-radius: 12px;
+    padding: 13px 16px;
+    background: $color-neutral-1;
+
+    .value {
+      font-size: $font-size-3;
+      font-family: SG-400;
+      color: $color-neutral-white;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}

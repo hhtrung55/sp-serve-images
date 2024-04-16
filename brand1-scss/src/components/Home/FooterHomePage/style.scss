@@ -1,0 +1,52 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.main-footer-home {
+  // bottom: 0;
+  // position: absolute;
+  background: #0f111a;
+  padding: 32px;
+  // margin-top: 40px;
+  @include maxWidth($mobile-width) {
+    padding: 16px 16px 24px 16px;
+    // margin: 24px -16px -24px -16px;
+  }
+  .logo {
+    color: var(--neutral-white, #fff);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+  }
+  .title {
+    color: var(--text-gray-100, #f4f5f7);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+  }
+  .content-text-footer {
+    color: var(--neutral-neutral-5, #6c708a);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+  }
+  .pt-3 {
+    padding-top: 12px;
+  }
+  .pt-4 {
+    padding-top: 16px;
+  }
+  .ml-2 {
+    margin-left: 8px;
+  }
+  .col-mobile {
+    padding-top: 24px;
+  }
+  .col-desktop {
+  }
+}

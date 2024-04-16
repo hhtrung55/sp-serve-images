@@ -1,0 +1,25 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+
+.create-challenge-balance-modal {
+  .create-challenge-balance {
+    margin-top: 16px;
+    &__des {
+      font-size: $font-size-3;
+      color: $color-neutral-6;
+      font-weight: SG-400;
+    }
+
+    &__buttons {
+      margin-top: 24px;
+      button {
+        flex: 1;
+      }
+    }
+
+    &__user-balance {
+      color: $color-white-0;
+    }
+  }
+}

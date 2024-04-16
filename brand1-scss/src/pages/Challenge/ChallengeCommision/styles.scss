@@ -1,0 +1,148 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.challenge-commision {
+  padding: 30px 27px 30px 27px;
+  &__body {
+    position: relative;
+  }
+  .superbit-empty-wrapper {
+    min-height: 60dvh;
+  }
+
+  @include mobile {
+    padding: 8px 0px;
+    &__body {
+      margin-top: -12px;
+      .ant-table {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .header-wrapper {
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      .challenge-commision__label {
+        margin-bottom: 24px;
+      }
+      .superbit-select-wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  .ant-table-row {
+    cursor: pointer;
+  }
+
+  &__label {
+    font-size: 1.25rem;
+    font-family: SG-700;
+    color: $color-neutral-white;
+  }
+
+  &__table {
+    margin-top: 24px;
+    .challenge-code {
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .status {
+      font-family: SG-400;
+      font-size: 0.875rem;
+
+      &--active {
+        color: $color-neutral-green-2;
+      }
+
+      &--claimed {
+        color: $color-neutral-8;
+      }
+    }
+    .cell-value {
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .ant-table-pagination {
+      .ant-pagination-item-active {
+        background: transparent !important;
+        border: transparent !important;
+        .page-item-container {
+          background: $color-main-primary;
+          color: $color-neutral-white;
+        }
+      }
+
+      .page-item-container {
+        &:hover {
+          background: $color-main-primary;
+          color: $color-white-0;
+          svg {
+            path {
+              fill: $color-white-0;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-pagination-disabled {
+      .page-item-container {
+        background: $color-neutral-3 !important;
+        svg {
+          path {
+            fill: $color-neutral-4 !important;
+          }
+        }
+      }
+    }
+    .ant-spin-spinning {
+      max-height: initial !important;
+    }
+    @include mobile {
+      .ant-table-content {
+        // overflow: auto;
+      }
+      .ant-pagination {
+        justify-content: center;
+        margin-top: 8px !important;
+      }
+    }
+  }
+
+  .request-deposit-wrapper {
+    font-size: 11px;
+    margin-top: 16px;
+    position: absolute;
+    // bottom: 46px;
+    // left: 0;
+    line-height: 150%;
+    display: none;
+    @include mobile() {
+      bottom: -24px;
+      display: flex;
+    }
+    &__label {
+      font-family: SG-400;
+      color: $color-neutral-5;
+    }
+
+    &__open-pu {
+      font-family: SG-500;
+      color: $color-main-primary;
+      cursor: pointer;
+    }
+  }
+  .green {
+    color: $color-neutral-green-2;
+  }
+  .red {
+    color: $color-state-error;
+  }
+}

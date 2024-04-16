@@ -1,0 +1,38 @@
+@import 'src/assets/scss/variable.scss';
+
+.radio-btn {
+  .ant-radio-inner {
+    background: transparent !important;
+    border-color: $color-neutral-5;
+  }
+  .ant-radio-checked {
+    .ant-radio-inner {
+      background: none !important;
+      &::after {
+        background-color: var(--primary-color, $color-primary-primary);
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  &--large {
+    .ant-radio-inner {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--medium {
+    .ant-radio-inner {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .children {
+    color: var(--nft-result-title-color, $color-neutral-neutral-1);
+    font-size: $font-size-3;
+    font-family: 'SpaceGrotest-600';
+    // margin-top: 4px;
+  }
+}

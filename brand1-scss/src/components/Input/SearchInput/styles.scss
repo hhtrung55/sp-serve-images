@@ -1,0 +1,60 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import '../styles.scss';
+
+.input-search-wrapper {
+  .ant-input-affix-wrapper-focused {
+    &.input-default {
+      background: $color-neutral-1;
+    }
+    .ant-input {
+      background: $color-neutral-1;
+    }
+  }
+
+  span.input-default {
+    height: 44px;
+    background: $color-neutral-3;
+    padding: 9.5px 16px;
+    border-radius: 12px;
+}
+
+  .ant-input-affix-wrapper {
+    align-items: center;
+  }
+  // padding: 9.5px 16px;
+  width: 200px;
+  height: 44px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  input {
+    font-family: SG-400;
+    margin: 0;
+  }
+  span {
+    margin-right: 8px;
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .ant-input-suffix {
+    margin: 0 0 0 3px;
+    &, span {
+      width: 14px;
+      height: 14px;
+    }
+
+    .ant-input-clear-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .ant-input-prefix {
+    margin-right: 8px !important;
+    img {
+      border-radius: 0;
+    }
+  }
+}

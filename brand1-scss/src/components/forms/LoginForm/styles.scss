@@ -1,0 +1,53 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.login-form-wrapper {
+  .login-form,
+  .ant-checkbox-wrapper,
+  .ant-form-item-label > label,
+  .ant-input::placeholder {
+    font-family: SG-400;
+    font-size: 1rem;
+    font-style: normal;
+  }
+
+  .login-form,
+  .ant-checkbox-wrapper,
+  .ant-form-item-label > label {
+    color: var(--neutral-neutral-5, #6c708a) !important;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .login-form-forgot {
+    color: var(--primary-main, #0075ff);
+    font-family: SG-400;
+    font-weight: 500;
+  }
+
+  .login-form-forgot:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .referral-field {
+    cursor: pointer;
+    .referral-label {
+      font-family: SG-400;
+      font-size: 0.875rem;
+      color: $color-white-0;
+    }
+
+  }
+
+  .cursor-default {
+    cursor: default;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+

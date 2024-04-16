@@ -1,0 +1,86 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.challenges__titlte-container {
+  display: flex;
+  gap: 24px;
+  color: var(--Neutral-White, #fff);
+  font-size: 14px;
+  font-family: SG-400;
+  .challenges__title {
+    font-family: SG-700;
+    font-size: 16px;
+  }
+  .challenges__rewards {
+    font-size: 14px;
+  }
+  .challenges__result {
+    color: var(--Primary-Main, #0075ff);
+  }
+}
+
+.challenges__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-family: SG-400;
+  .challenges__item {
+    padding: 12px 16px;
+    background: var(--Neutral-Neutral-2, #1d2136);
+    border: 0.5px solid var(--Neutral-Stroke, #2b3048);
+    display: flex;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    .challenges__item-title {
+      flex: 1;
+    }
+  }
+  .challenges__item-code {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    span {
+      color: var(--States-Warning, #ffc24c);
+    }
+  }
+  .challenges__item-reward {
+    &__label {
+      color: $color-white-0;
+      font-family: SG-400;
+      font-size: $font-size-2;
+    }
+    .usd {
+      color: $color-main-primary;
+    }
+  }
+
+  .more-challenge-btn {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-left: 0;
+    width: fit-content;
+    span {
+      text-decoration: underline;
+      color: $color-main-primary;
+      font-family: SG-700;
+      font-size: $font-size-2;
+      line-height: 150%;
+    }
+  }
+}
+
+.challenges__collapse {
+  .ant-collapse-header {
+    padding: 12px 0px !important;
+  }
+  .ant-collapse-content-box {
+    padding: 0px !important;
+  }
+}

@@ -1,0 +1,25 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.transaction-header-wrapper {
+  margin-bottom: 16px;
+
+  &__label {
+    font-size: 1.25rem;
+    font-family: SG-700;
+    color: $color-neutral-white;
+  }
+
+  .all-option {
+    font-family: SG-400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: $color-white-0;
+  }
+}
+
+.select-network {
+  .rc-virtual-list-holder {
+    max-height: 306px;
+  }
+}

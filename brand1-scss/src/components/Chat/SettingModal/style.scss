@@ -1,0 +1,22 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.setting__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  .setting__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--Neutral-White, #fff);
+    .setting__subtitle {
+      color: var(--Neutral-Neutral-5, #6c708a);
+      font-size: 12px;
+    }
+  }
+}
+.ant-popover-content .ant-switch.ant-switch-checked {
+  background-color: var(---state-sucess, #5ae02f) !important;
+}

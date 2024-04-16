@@ -1,0 +1,12 @@
+.clan-chat__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .clan-chat__select {
+    height: max-content;
+  }
+  .clan-chat__chatbox {
+    flex: 1;
+    min-height: 0px;
+  }
+}

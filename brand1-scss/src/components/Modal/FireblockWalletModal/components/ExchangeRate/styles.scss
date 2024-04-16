@@ -1,0 +1,27 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.exchange-rate-section {
+  padding: 16px;
+  border-radius: 8px;
+  background: $color-neutral-3;
+  div {
+    color: $color-white-0;
+    font-size: $font-size-3;
+    font-weight: $font-weight-4;
+    line-height: 24px;
+  }
+
+  .input-token-wrapper {
+    flex: 1;
+  }
+
+  &__text {
+    color: $color-neutral-5;
+    font-size: $font-size-1;
+    font-weight: $font-weight-4;
+    line-height: 150%;
+    text-align: center;
+  }
+}

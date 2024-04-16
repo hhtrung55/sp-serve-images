@@ -1,0 +1,12 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.not-available__desc {
+  color: var(--Neutral-Neutral-5, #6c708a);
+  font-family: SG-400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+}

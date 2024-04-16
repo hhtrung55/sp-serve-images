@@ -1,0 +1,94 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.bonus-battles-page {
+  width: 100%;
+  padding: 40px 24px 60px 24px;
+
+  &__title {
+    color: $color-neutral-white;
+    font-family: SG-700;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+  &__create-button {
+    color: $color-neutral-7;
+    padding: 10px 20px !important;
+    height: 44px;
+
+    .ant-btn-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover svg {
+      fill: $color-hover-button;
+    }
+  }
+
+  &__search {
+    width: 461px;
+    .ant-input-prefix {
+      margin-right: 8px !important;
+    }
+  }
+
+  &__select {
+    height: 44px !important;
+    .ant-select-selector {
+      height: 42px !important;
+      margin: 1px 0;
+    }
+  }
+
+  &__tabs.custom-tab .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $color-neutral-7 !important;
+  }
+
+  &__tabs.custom-tab .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+    line-height: 21px;
+    padding: 5px 12px !important;
+  }
+
+  &__filter {
+    width: 100%;
+    & > div:first-child {
+      max-width: 461px;
+    }
+    & > div:nth-child(2) {
+      flex: 1;
+    }
+  }
+
+  &__list {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+    gap: 16px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 599px) {
+      grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+      gap: 12px 6px;
+    }
+  }
+
+  &__empty-list {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 123px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

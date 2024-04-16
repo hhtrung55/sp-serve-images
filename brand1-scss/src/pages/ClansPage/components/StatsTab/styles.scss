@@ -1,0 +1,56 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.stats-tab-wrapper {
+  .multiplier-value {
+    font-size: $font-size-2;
+    font-family: SG-400;
+    color: $color-neutral-7;
+
+    &--green {
+      color: $color-state-success;
+    }
+  }
+
+  &__pnl-chart-info {
+    .label {
+      font-size: $font-size-3;
+      color: $color-neutral-white;
+      font-family: SG-700;
+    }
+
+    .value {
+      font-size: $font-size-3;
+      font-family: SG-400;
+      color: $color-neutral-white;
+
+      &--green {
+        color: $color-state-success;
+      }
+    }
+
+    border-radius: 12px;
+    background: $color-neutral-2;
+    padding: 25px 30px;
+
+    @include mobile {
+      padding: 25px 14px;
+    }
+  }
+
+  &__public-bets-table {
+    .title {
+      font-size: $font-size-3;
+      color: $color-neutral-white;
+      font-family: SG-700;
+    }
+  }
+  &__pnl-empy-chart-info {
+    min-height: toRem(340);
+    justify-content: center;
+    .superbit-empty-wrapper {
+      flex-grow: 1;
+    }
+  }
+}

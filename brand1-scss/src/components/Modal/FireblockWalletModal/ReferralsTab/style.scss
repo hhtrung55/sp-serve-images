@@ -1,0 +1,23 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+.referrals {
+  background: $color-neutral-3;
+  margin-top: -4px;
+  padding: 16px;
+  &__title {
+    font-family: SG-700;
+    line-height: 24px;
+    font-size: 1rem;
+    color: $color-neutral-white;
+    margin-top: 8px;
+    text-align: center;
+  }
+  &__sub {
+    font-size: 0.875rem;
+    font-family: SG-400;
+    line-height: 150%;
+    color: $color-neutral-5;
+    margin-top: 4px;
+  }
+}

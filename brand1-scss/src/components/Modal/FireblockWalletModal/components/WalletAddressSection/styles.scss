@@ -1,0 +1,83 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.wallet-section {
+  padding: 16px;
+  border-radius: 8px;
+  background: $color-neutral-3;
+
+  &__description {
+    color: $color-neutral-5;
+    font-size: $font-size-2;
+    font-weight: $font-weight-4;
+    line-height: 150%;
+  }
+
+  &__qr {
+    img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+    }
+  }
+
+  &__address {
+    margin-top: 24px;
+    label {
+      color: $color-neutral-5;
+      font-size: $font-size-2;
+      font-weight: $font-weight-4;
+      line-height: 150%;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .helper-text {
+      margin-top: 8px;
+      span {
+        color: $color-neutral-5;
+        font-size: $font-size-1;
+        font-weight: $font-weight-4;
+        line-height: 150%;
+        margin-right: 8px;
+      }
+
+      a {
+        font-size: $font-size-1;
+        font-weight: $font-weight-5;
+        color: $color-main-primary;
+      }
+    }
+  }
+
+  &__alert {
+    margin-top: 8px;
+  }
+
+  &__choose-network {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: $color-neutral-5;
+      margin-bottom: 4px;
+    }
+    .ant-select {
+      height: 52px;
+      .ant-select-selector {
+        background: $color-neutral-1 !important;
+        .ant-select-selection-placeholder {
+          color: $color-neutral-5;
+        }
+      }
+    }
+
+    .ant-form-item-row {
+      flex-direction: column;
+      display: flex;
+      .ant-form-item-label {
+        text-align: start;
+      }
+    }
+  }
+}

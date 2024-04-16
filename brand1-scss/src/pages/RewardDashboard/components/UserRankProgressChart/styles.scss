@@ -1,0 +1,26 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.user-rank-chart-wrapper {
+  position: relative;
+  img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .ant-progress-inner {
+    width: 170px !important;
+    height: 170px !important;
+    svg {
+      circle:nth-child(1) {
+        stroke-width: 15;
+      }
+      circle:nth-child(2) {
+        stroke-width: 8;
+      }
+    }
+  }
+}

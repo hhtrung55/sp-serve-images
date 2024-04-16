@@ -1,0 +1,42 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.fireblock-option {
+  min-height: 110px;
+  border-radius: 8px;
+  border: 1px solid $color-neutral-stroke;
+  background: $color-neutral-3;
+  padding: 16px 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &__title {
+    font-size: $font-size-2;
+    font-weight: $font-weight-5;
+    line-height: 22px;
+    color: $color-white-0;
+  }
+  &__subtitle {
+    font-size: $font-size-1;
+    font-weight: $font-weight-4;
+    line-height: 150%;
+    color: $color-neutral-5;
+  }
+
+  &__icons {
+    width: 81px;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    width: 32px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    width: 47% !important;
+  }
+}

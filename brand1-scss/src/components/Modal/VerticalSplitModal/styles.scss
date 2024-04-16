@@ -1,0 +1,66 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.vertical-split-modal {
+  .ant-modal-content {
+    font-family: 'SG-400';
+    color: $color-neutral-white;
+    padding: 0;
+    border-radius: 16px;
+    background: $color-neutral-2;
+    box-shadow: 8px 8px 20px 0px rgba(255, 255, 255, 0.03) inset, 0px -3px 20px 0px rgba(255, 255, 255, 0.03) inset;
+  }
+
+  .left-panel {
+    display: flex;
+    padding: 1.5em 2em 2em 2em;
+    align-items: flex-start;
+    .normal-text {
+      color: $color-neutral-5;
+    }
+    flex: 1;
+  }
+
+  .right-panel {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-panel::before {
+    content: '';
+    display: block;
+    width: 485px;
+  }
+
+  .ant-modal-close-x {
+    padding: 6px;
+    border-radius: 4px;
+    color: $color-neutral-5;
+    border: 1px solid $color-neutral-stroke;
+    background: $color-neutral-3;
+    width: 26px;
+    height: 26px;
+    img {
+      width: 14px;
+      height: 14px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @include mobile {
+    &__container > * {
+      width: 100%;
+    }
+    .left-panel > div {
+      width: 100%;
+    }
+    .right-panel {
+      display: none;
+    }
+  }
+}

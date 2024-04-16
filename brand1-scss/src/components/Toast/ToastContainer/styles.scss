@@ -1,0 +1,31 @@
+$body-color: #454545;
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+
+.toast-body {
+  &__top {
+    // color: var(--states-error, #DE3030);
+
+  font-family: SG-400;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  }
+
+  &__bottom {
+    color: $color-neutral-neutral-3;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  a {
+    color: $color-main-primary;
+    text-decoration: none;
+  }
+  img {
+    margin: 0 13px 0 21px;
+  }
+}
+
+.toast-close-icon {
+  cursor: pointer;
+}

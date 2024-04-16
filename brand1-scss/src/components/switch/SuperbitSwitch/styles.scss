@@ -1,0 +1,37 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.superbit-switch {
+    &__label {
+        color: $text-color-white;
+        font-family: SG-400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ant-switch {
+        width: 48px;
+        height: 28px;
+        background: $color-neutral-4;
+        padding: 4px;
+
+        &:hover {
+            background: $color-neutral-4; 
+        }
+
+        .ant-switch-handle {
+            width: 20px;
+            height: 20px;
+            top: 4px;
+            left: 4px;
+        }
+
+        &.ant-switch-checked, &.ant-switch-checked:hover {
+            border-radius: 14px;
+            background: $color-state-success;
+            .ant-switch-handle {
+                inset-inline-start: calc(100% - 24px) 
+            }
+        }
+    }
+}

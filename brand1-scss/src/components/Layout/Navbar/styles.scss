@@ -1,0 +1,78 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+#navbar {
+  padding: 8px 0px;
+  // border-bottom: 1px solid $color-neutral-stroke;
+  @include maxWidth($xl) {
+    display: none;
+  }
+  color: $color-neutral-5;
+  .nav-item {
+    color: $color-neutral-5 !important;
+    :hover {
+      cursor: pointer;
+    }
+    padding: toRem(5) toRem(16);
+
+    &--icon {
+      margin-right: toRem(6);
+    }
+    span {
+      font-size: toRem(14);
+      line-height: toRem(16);
+    }
+    padding: 5px 16px;
+    text-decoration: none;
+  }
+  fill: $color-neutral-5;
+  .item-active {
+    display: flex;
+    padding: 5px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    border: 0.5px solid var(--Stroke-blue, #0085ff);
+    background: var(--primary-main, #0075ff);
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+      4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+    color: var(--neutral-white, #fff) !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+  }
+  svg {
+    fill: $color-neutral-white;
+    margin-right: toRem(6);
+  }
+  .main-nav-desktop {
+    .slick-track {
+      width: 100% !important;
+      margin-left: 0px;
+      // min-width: 100%;
+    }
+    @include minWidth($xxl) {
+      // width: 59vw;
+    }
+    max-width: calc(100vw - $app-width-sidebar - $app-width-chat);
+    margin: 0 auto;
+  }
+  .slick-list {
+    @include minWidth($xxl) {
+      margin: 0px;
+    }
+    margin: 0px 14px;
+  }
+  .left-nav-desktop {
+    width: 19.8vw;
+  }
+  .right-nav-desktop {
+    width: 23vw;
+  }
+  .slick-slider.slick-initialized {
+    width: 100%;
+  }
+}

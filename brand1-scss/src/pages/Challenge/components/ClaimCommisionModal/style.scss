@@ -1,0 +1,53 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.claim-commision-modal {
+  .ant-modal-content {
+    .ant-modal-header {
+      background-color: transparent;
+      background: transparent;
+    }
+    .ant-modal-title {
+      color: $color-white-0;
+    }
+
+    // padding: 0;
+    border-radius: 16px;
+    background: var(--Neutral-Neutral-2, #1d2136);
+    overflow: hidden;
+
+    .ant-modal-close-x {
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid var(--neutral-stroke, #2b3048);
+      background: var(--neutral-neutral-3, #22263b);
+      width: 26px;
+      height: 26px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .description {
+      margin-top: 16px;
+      font-size: toRem(14);
+      .balance {
+        color: $color-state-success;
+        margin-right: 3.5px;
+        font-family: 'SG-400';
+      }
+      .ant-typography {
+        color: $color-white-0;
+        font-family: 'SG-400';
+      }
+    }
+    .btn-container {
+      margin-top: 24px;
+    }
+  }
+}

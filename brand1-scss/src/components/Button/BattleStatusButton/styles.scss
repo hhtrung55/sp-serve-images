@@ -1,0 +1,42 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.battle-status-button {
+    padding: 4px 16px;
+    align-self: stretch;
+    cursor: pointer;
+    &, & .ant-statistic-content-value {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; 
+    }
+
+    .red-text{
+        color: $color-state-error;
+        font-weight: 500;
+    }
+
+    &__title {
+        color: $color-neutral-white;
+        font-family: SG-400;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; 
+    }
+}
+
+.unavailable-button {
+    border-radius: 8px;
+    background: $color-neutral-1;
+}
+
+.available-button {
+    padding: 4px 20px;
+    border-radius: 8px;
+    border: 1px solid $color-stroke-blue;
+    background: $color-main-primary;
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.70), 5px 5px 10px 0px #ABCDFF inset, 4px -5px 10px 0px rgba(12, 59, 223, 0.70) inset;
+}

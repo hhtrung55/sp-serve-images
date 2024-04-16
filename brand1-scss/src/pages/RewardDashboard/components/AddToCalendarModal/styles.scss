@@ -1,0 +1,22 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.add-to-calendar {
+  &__header {
+    padding: 16px;
+    margin-bottom: 20px;
+    h2 {
+      color: $color-white-0;
+      font-size: $font-size-7;
+      font-weight: $font-size-7;
+      line-height: 150%;
+    }
+  }
+
+  &__history {
+    padding: 16px;
+    background-color: $color-neutral-3;
+    border-radius: 8px;
+  }
+}

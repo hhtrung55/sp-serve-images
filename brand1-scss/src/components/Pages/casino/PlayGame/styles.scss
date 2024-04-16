@@ -1,0 +1,311 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.main-play-game-page {
+  @include maxWidth($mobile-width) {
+    padding: 0px;
+  }
+  padding: 24px 28px;
+  .main-play-game {
+    border-radius: 12px;
+    background: var(--Neutral-Neutral-2, #1d2136);
+    .side-bar {
+      .ant-btn {
+        display: flex;
+        align-items: center;
+        padding: 0px !important;
+      }
+      padding: 16px 24px;
+      .NameGame {
+        span {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          max-width: 300px;
+          color: #fff;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          padding-right: 1rem;
+          font-family: SG-700;
+        }
+      }
+      .type-game {
+        color: var(--Neutral-Neutral-5, #6c708a);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        padding-right: 1rem;
+        cursor: pointer;
+      }
+      .sidebet-active {
+        //   border-radius: 8px;
+        //   background: rgba(100, 183, 73, 0.2);
+        @include maxWidth($sm) {
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
+        .ant-tag {
+          border-radius: 8px;
+          padding: 5px 12px;
+          color: var(--States-Success, #64b749);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px; /* 157.143% */
+        }
+      }
+    }
+    .side-bets {
+      padding: 16px 24px;
+      // .ant-tooltip-inner {
+      //   background: white !important;
+      // }
+      .custom-tooltip {
+        .ant-btn {
+          padding: 0px;
+          display: flex;
+          align-items: center;
+        }
+        .text {
+          padding: 0px 8px;
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+        }
+      }
+    }
+    .main-iframe {
+      height: 100%;
+    }
+    .btn-add-sidebets {
+      border-radius: 8px;
+      border: 1px solid var(--Stroke-blue, #0085ff);
+      background: var(--Primary-Main, #0075ff);
+      box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+        4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+      color: var(--Text-White, #fff);
+      font-size: 16px;
+      padding: 0px 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+      width: 100%;
+    }
+    .ant-select {
+      width: 100%;
+    }
+  }
+  .main-bets {
+    margin-top: 24px;
+    .challenges-text {
+      padding: 0px 24px 0px 8px;
+      color: var(--Neutral-White, #fff);
+      font-family: 'SG-700';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+    }
+    .rewards-available {
+      color: var(--Neutral-White, #fff);
+      font-size: 14px;
+      padding-right: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+    .price {
+      color: var(--Primary-Main, #0075ff);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+  }
+
+  .main-list-challenges {
+    margin-top: 16px;
+    padding: 12px 24px;
+  }
+  .ant-input-affix-wrapper {
+    border-radius: 8px;
+    background: #15192f;
+    border-color: #15192f;
+  }
+  .ant-input {
+    color: var(--Neutral-White, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background: #15192f;
+  }
+  .custom-select {
+    .ant-select-selector {
+      background: #22263b;
+      border-color: #22263b;
+    }
+
+    .ant-select-selection-item {
+      color: var(--Neutral-White, #fff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .ant-select {
+      border-radius: 8px;
+      background: #22263b;
+      border-color: #22263b;
+      min-width: 12rem;
+      :hover {
+        border-color: #22263b !important;
+      }
+    }
+
+    .ant-select-arrow {
+      display: none;
+    }
+  }
+  :hover.ant-select-selector {
+    border-color: #22263b;
+  }
+  .text-description {
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    .text {
+      color: #fff !important;
+    }
+    .price {
+      color: var(--Primary-Main, #0075ff) !important;
+    }
+  }
+  .title-load-more {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .category-name {
+      margin-right: 12px;
+      color: var(--neutral-white, #fff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+      text-transform: uppercase;
+    }
+    .all-game {
+      color: var(--primary-main, #0075ff);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 21px */
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .battle-info {
+    margin: 0 24px 0 8px;
+
+    &__name {
+      font-weight: 500;
+      line-height: 22px;
+    }
+
+    &__status {
+      font-size: 12px;
+      color: $color-neutral-6;
+    }
+  }
+}
+:where(.css-dev-only-do-not-override-2q8sxy).ant-select-single.ant-select-lg.ant-select-open
+  .ant-select-selection-item {
+  color: white !important;
+}
+
+.superbit-select-popup-common {
+  min-width: 210px;
+  @include mobile{
+    min-width: 164px;
+  }
+  margin-top: 4px;
+  padding: 8px 0 6px 0;
+  border-radius: 8px;
+  background: $color-neutral-3;
+
+  .ant-select-item.ant-select-item-option {
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-family: SG-400;
+    line-height: 24px;
+    color: white;
+  }
+
+  .ant-select-item-option-active,
+  .ant-select-item-option-active.ant-select-item-option-selected {
+    background: $color-neutral-stroke !important;
+  }
+  .ant-select-selection-item {
+    color: white !important;
+  }
+
+  .ant-select-item-option-selected {
+    background: $color-neutral-3 !important;
+    .ant-select-item-option-content {
+      color: white;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 500;
+    }
+  }
+
+  &__search {
+    margin: 0 8px;
+    .input-default {
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+  .ant-select-single.ant-select-lg .ant-select-selector {
+    color: white;
+  }
+  .main-play-game-page .custom-select .ant-select :hover {
+    color: white;
+  }
+  .ant-select-item-empty {
+    display: flex;
+    justify-content: center;
+    .item-not-found {
+      color: white;
+      font-size: 12px;
+      height: 156px;
+      padding-top: 40px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+.game__more-game {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  @include maxWidth($sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+.challenge-section{
+  margin-top: 12px;
+}

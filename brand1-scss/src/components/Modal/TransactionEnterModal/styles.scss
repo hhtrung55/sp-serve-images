@@ -1,0 +1,14 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.transaction-form {
+  margin-top: 16px;
+  .input-box {
+    margin-bottom: 16px;
+  }
+  .ant-form-item-explain {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}

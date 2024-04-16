@@ -1,0 +1,22 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.profile-section {
+    padding: 16px 20px 18px 20px;
+    border-radius: 16px;
+    border: 1px solid $color-neutral-4;
+    background: $color-neutral-3;
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    color: $color-neutral-5;
+    &__title {
+        color: $text-color-white;
+        font-family: SG-700;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        @include mobile {
+            font-size: 14px;
+    }
+    }
+}

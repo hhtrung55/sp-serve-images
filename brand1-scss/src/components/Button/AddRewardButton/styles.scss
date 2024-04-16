@@ -1,0 +1,39 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.add-reward-btn {
+  gap: 8px;
+  height: fit-content !important;
+  &.ant-btn-loading {
+    flex-direction: row;
+    .ant-btn-loading-icon {
+      margin-inline-end: 0 !important;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+  .add-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+  }
+
+  &__claim {
+    flex-wrap: wrap;
+    max-width: 120px;
+    row-gap: 0;
+  }
+
+  &__countdown {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    .ant-statistic-content-value,
+    span {
+      color: $color-white-0;
+      font-size: 10px;
+      font-weight: $font-weight-7;
+      line-height: 150%;
+    }
+  }
+}

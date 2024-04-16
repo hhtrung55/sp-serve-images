@@ -1,0 +1,19 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.header-footer-layout {
+  background-color: $color-neutral-1;
+  &__wrapper {
+    max-width: 1014px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 60px;
+    background-color: transparent;
+    margin-bottom: -40px;
+    @include mobile {
+      padding: 16px;
+    }
+  }
+}

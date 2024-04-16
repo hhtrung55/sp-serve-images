@@ -1,0 +1,15 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+footer {
+  background-color: $color-neutral-2;
+  color: $color-neutral-white;
+  .header--search {
+    display: none;
+    @include minWidth($sm) {
+        display: block;
+    }
+  }
+}

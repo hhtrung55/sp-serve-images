@@ -1,0 +1,55 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.button-with-icon {
+    position: relative;
+    min-width: 112px;
+    min-height: 44px;
+    border-radius: 8px;
+    border: none;
+    background: var(--neutral-stroke, #2B3048);
+    display: flex;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 8px;
+
+    .ant-btn-icon.ant-btn-loading-icon {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .button-with-icon__icon {
+        width: 24px;
+        height: 24px;   
+    }
+
+    .button-with-icon__text {
+        color: var(--neutral-neutral-6, #A4A7BC);
+        font-size: 1em;
+        text-align: center;   
+    }
+
+    @include mobile {
+        & {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            min-width: 44px;
+            width: 44px;
+            height: 44px;
+        }
+        .button-with-icon__text {
+            display: none;
+        }
+    }
+}

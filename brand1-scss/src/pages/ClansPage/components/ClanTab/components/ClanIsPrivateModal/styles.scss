@@ -1,0 +1,23 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-is-private-modal-wrapper {
+  .ant-modal-content {
+    padding: 30px;
+  }
+
+  &__content {
+    font-size: $font-size-5;
+    font-family: SG-700;
+  }
+
+  &__close-icon {
+    height: 26px;
+    width: 26px;
+    border: 1px solid $color-neutral-stroke;
+    background: $color-neutral-3;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,48 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.forgot-password-form {
+    width: 385px;
+
+    &__title div {
+        color: $color-neutral-white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px
+    }
+
+    &__desc {
+        div {
+            color: $color-neutral-5;
+            font-size: 14px;
+            font-style: normal;
+        }
+    }
+
+    &__email {
+        margin-bottom: 0;
+        font-size: 14px;
+        .ant-form-item-label{
+            padding-bottom: 0;
+        }
+        input {
+            padding: 12px;
+        }
+        .ant-input.input-default::placeholder {
+            font-size: 16px;
+        }
+        .title {
+            font-size: 14px;
+        }
+    }
+
+    &__back {
+        font-family: SG-700;
+        color: $color-main-primary;
+        &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        }
+    }
+}

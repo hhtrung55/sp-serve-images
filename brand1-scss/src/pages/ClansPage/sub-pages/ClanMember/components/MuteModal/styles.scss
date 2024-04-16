@@ -1,0 +1,30 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.mute-modal {
+  &__options {
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    label {
+      .children {
+        font-family: 'SG-400';
+        color: $color-neutral-5;
+        font-size: $font-size-3;
+        font-weight: $font-weight-4;
+        line-height: 24px;
+      }
+    }
+
+    .ant-radio-wrapper-checked {
+      .children {
+        font-family: 'SG-500';
+        color: $color-white-0;
+        font-size: $font-size-3;
+        font-weight: $font-weight-5;
+        line-height: 24px;
+      }
+    }
+  }
+}

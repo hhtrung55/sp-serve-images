@@ -1,0 +1,18 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.highlight-section {
+    padding: 16px;
+    border-radius: 8px;
+    background: $color-neutral-3;
+    color: $color-neutral-5;
+    &__title {
+        color: $color-main-primary;
+        font-weight: 500;
+        line-height: 22px; 
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+}

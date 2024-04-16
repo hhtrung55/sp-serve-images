@@ -1,0 +1,54 @@
+:root {
+  --str-chat__message-list-background-color: red;
+}
+.chat-box__container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0px 0px 0px;
+  gap: 12px;
+  height: 100%;
+  width: 100%;
+  .str-chat__list {
+    background: var(--Neutral-Neutral-2, #1d2136);
+    .str-chat__ul {
+      .str-chat__li {
+        .emoji-icon {
+          width: 23px;
+        }
+        margin-bottom: 8px;
+        .str-chat__message-mention {
+          color: var(--Neutral-White, #fff);
+        }
+      }
+    }
+  }
+  .chat-box__messages {
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    .str-chat__list {
+      padding: 0px;
+      .str-chat__message-url-link {
+        color: var(--Primary-Main, #0075ff);
+      }
+      .str-chat__reverse-infinite-scroll {
+        padding: 0px;
+        .str-chat__li--top {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+  .chat-box__footer {
+    height: max-content;
+  }
+  .chat-box__error {
+    margin-top: 12px;
+    color: var(--States-Error, #de3030);
+    font-family: SG-400;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

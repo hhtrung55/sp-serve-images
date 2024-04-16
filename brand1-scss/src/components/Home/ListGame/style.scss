@@ -1,0 +1,59 @@
+.main-slide {
+  margin-top: 16px;
+  .slick-slide.slick-active.slick-cloned {
+    display: none;
+  }
+  .slick-slider.slick-initialized {
+    height: 100%;
+  }
+  button.slick-arrow.slick-prev {
+    display: none !important;
+  }
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+  .head-slide {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .category-name {
+    margin-right: 12px;
+    color: var(--neutral-white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+  .all-game {
+    color: var(--primary-main, #0075ff);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    cursor: pointer;
+  }
+  .btn-next-prev {
+    height: 24px;
+  }
+  .py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .px-0 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .pl-1 {
+    padding-left: 4px;
+  }
+  .pr-0 {
+    padding-right: 4px;
+  }
+  .disabled {
+    :hover {
+      cursor: initial;
+    }
+  }
+}

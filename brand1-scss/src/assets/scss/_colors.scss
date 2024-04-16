@@ -1,0 +1,150 @@
+$color-white-0: #fff;
+$color-white-1: #f7f7f7;
+$color-white-2: #fcfcfc;
+
+$color-grey-0: #d1d1d1;
+$color-grey-1: #adadad;
+$color-grey-2: #99a0b1;
+$color-grey-3: #56607a;
+$color-grey-4: #e6e8ec;
+$color-grey-5: #20232c73;
+
+$color-black-0: #787878;
+$color-black-1: #454545;
+$color-black-2: #303030;
+$color-black-3: #242424;
+$color-black-4: #121212;
+$color-black-5: #000;
+$color-black-6: #20232c;
+$color-black-7: #393d49;
+
+$color-orange-0: #ff9b05;
+$color-orange-1: #fff7ea;
+
+$color-blue-0: #1e6fd9;
+$color-blue-1: #e9f1fc;
+
+$color-gray-4: #99a0b1;
+
+$color-pink-0: #fbeaed;
+
+$color-link: #1e6fd9;
+$color-success: #4ecc79;
+$color-warning: #ff9b05;
+$color-error: #f35b37;
+
+//NEW COLOR THEME
+$color-primary-primary: #1e6fd9;
+$color-primary-rgb: 30, 111, 217;
+
+$color-state-success: #11af50;
+$color-state-info: #1cbce4;
+$color-state-warning: #ff9b05;
+
+$color-neutral-neutral-1: #20232c;
+$color-neutral-neutral-2: #393d49;
+$color-neutral-neutral-3: #56607a;
+$color-neutral-neutral-4: #99a0b1;
+$color-neutral-neutral-5: #e6e8ec;
+$color-neutral-neutral-6: #f3f5f8;
+
+$color-neutral-button: #e9f1fc;
+
+$color-neutral-white: #ffffff;
+$color-neutral-white-1: #fcfcfc;
+$color-neutral-white-2: #fcfcfd;
+
+$color-neutral-blue: #0f3f9c;
+$color-neutral-blue-1: rgba(28, 188, 228, 0.1);
+
+$color-neutral-red: rgba(255, 48, 51, 0.1);
+
+$color-neutral-blue-1: rgba(28, 188, 228, 0.1);
+
+$color-neutral-green-1: #58bd7d;
+$color-neutral-green-2: #5ae02f;
+
+$color-neutral-orange-1: #ffb45d;
+
+$color-disable: rgba(0, 0, 0, 0.25);
+$color-bg-disable: rgba(0, 0, 0, 0.04);
+$color-border-disable: #d9d9d9;
+
+// NFT detail
+$text-text-1: #333;
+
+:export {
+  primaryPrimaryColor: $color-primary-primary;
+  neutralGreen1Color: $color-neutral-green-1;
+  neutralOrange1Color: $color-neutral-orange-1;
+}
+
+// main color
+
+$color-main-primary: #0075ff;
+$color-main-secondary: #9c4fff;
+
+$color-state-success: #5ae02f;
+$color-state-info: #60b6f7;
+$color-state-warning: #ffcd4c;
+$color-state-error: #de3030;
+$color-state-error-2: #f5222d;
+$color-state-error-3: #331c2f;
+
+$color-neutral-1: #15192f;
+$color-neutral-2: #1d2136;
+$color-neutral-2_5: #282c40;
+$color-neutral-3: #22263b;
+$color-neutral-4: #414459;
+$color-neutral-5: #6c708a;
+$color-neutral-6: #a4a7bc;
+$color-neutral-7: #eff0f7;
+$color-neutral-8: #ffc24c;
+
+$color-neutral-line: #eaedf4;
+$color-neutral-background: #f7f8fb;
+$color-neutral-white: #fff;
+$color-neutral-stroke: #2b3048;
+
+$color-rank-bronze-1: #c25b37;
+$color-overlay: rgba(8, 9, 16, 0.7);
+$color-bg-active: #12274e;
+$color-box-shadow-primary: #2869f6;
+
+$color-states-success: #5ae02f;
+$color-states-live: #ff4949;
+$color-tab-disabled: #676d7c;
+$color-neutral-neutral-2: #1d2136;
+
+$color-box-status-success: #5ae02f;
+
+$color-rank-blue: #5ee1f5;
+$color-rank-purple: #db28e0;
+$color-background-button-1: #015df826;
+$color-stroke-blue: #0085ff;
+$color-hover-button: #4096ff;
+$fail-text-color: #d42f2f;
+$success-text-color: #64B749;
+
+$fail-text-color: #d42f2f;
+$success-text-color: #64B749;
+
+$background-info-color: #eef4ff;
+$background-success-color: #2B3F3A;
+$background-warning-color: #fffaeb;
+$background-error-color: #432435;
+
+$info-color: #4d8aff;
+$filter-info-color: invert(44%) sepia(64%) saturate(1244%) hue-rotate(200deg) brightness(101%)
+  contrast(104%);
+
+$error-color: #f35b37;
+$filter-error-color: invert(45%) sepia(34%) saturate(1795%) hue-rotate(333deg) brightness(96%)
+  contrast(98%);
+
+$warning-color: #fdc932;
+$filter-warning-color: invert(83%) sepia(53%) saturate(891%) hue-rotate(331deg) brightness(106%)
+  contrast(98%);
+
+$success-color: #64B749;
+$filter-success-color: brightness(0) saturate(100%) invert(56%) sepia(63%) saturate(425%) hue-rotate(60deg) brightness(100%) contrast(86%);

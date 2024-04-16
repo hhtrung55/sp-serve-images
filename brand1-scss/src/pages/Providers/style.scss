@@ -1,0 +1,55 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss-common/TableTabs.scss';
+
+.provider {
+  padding: 32px 24px;
+  @include mobile {
+    & {
+      padding: 32px 0px;
+    }
+  }
+  .provider__title {
+    color: var(--Neutral-White, #fff);
+    font-family: SG-700;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .provider__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+  }
+  @include mobile {
+    .provider__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .provider__item {
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Neutral-Neutral-2, #1d2136);
+    border-radius: 0.75rem;
+    height: 116px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .provider__total {
+    position: absolute;
+    bottom: 0.75rem;
+    font-size: 12px;
+    color: var(--Neutral-Neutral-5, #6c708a);
+    font-family: SG-400;
+  }
+}

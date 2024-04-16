@@ -1,0 +1,108 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-info-wrapper {
+  padding: 40px 24px;
+  .clan-tab-wrapper {
+    @include mobile {
+      border-radius: 12px;
+      // margin-left: 16px;
+      width: calc(100% - 90px);
+      overflow: hidden;
+    }
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .pointer-back {
+    cursor: pointer;
+  }
+
+  &-tabs {
+    width: 100%;
+    position: relative;
+    .ant-tabs-nav {
+      margin-bottom: 0;
+      @include mobile{
+        .ant-tabs-nav-operations{
+          display: none;
+        }
+      }
+    }
+
+    .ant-tabs-tab-btn {
+      padding: 5px 12px !important;
+      min-width: 100% !important;
+    }
+
+    .ant-tabs-nav-list {
+      padding: 4.5px 4px !important;
+    }
+
+    @include mobile {
+      .ant-tabs-nav {
+        width: 100%;
+        .ant-tabs-nav-wrap {
+          justify-content: flex-start !important;
+        }
+      }
+    }
+  }
+
+  &__top-section {
+    .header {
+      &__title {
+        font-size: $font-size-7;
+        color: $color-neutral-white;
+        font-family: SG-700;
+      }
+
+      &__actions {
+        &-label {
+          font-size: $font-size-3;
+          color: $color-main-primary;
+          font-family: SG-700;
+        }
+
+        &-buttons {
+          .copy-button-clan {
+            font-size: 1rem;
+            font-family: SG-700;
+          }
+        }
+        @include mobile {
+          flex-direction: column;
+          align-items: baseline;
+          width: 100%;
+          & > .ant-flex {
+            width: 100%;
+          }
+          &-buttons {
+            width: 100%;
+            margin-top: 16px;
+            button {
+              width: 50%;
+            }
+          }
+          .custom-tab {
+            // width: calc(100% - 64px);
+            // width: 100%;
+            // margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom-section {
+    margin-top: 48px;
+  }
+
+  @include mobile {
+    // padding: 24px 0px;
+    padding: 8px 0px 24px 0px;
+  }
+}

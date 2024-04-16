@@ -1,0 +1,92 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.input-box {
+  margin-bottom: 0;
+  .ant-typograp hy {
+    margin-bottom: 4px;
+    font-family: 'SpaceGrotest-600';
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    font-family: SG-400;
+    -webkit-text-fill-color: $color-neutral-white !important;
+    -webkit-box-shadow: 0 0 0px 1000px $color-neutral-1 inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+    caret-color: $color-neutral-white;
+  }
+
+  .input-default {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    background: $color-neutral-1;
+    font-family: SG-400;
+    color: $color-neutral-white;
+    input {
+      background: transparent;
+      font-family: SG-400;
+      font-size: $font-size-3;
+      // margin-top: 2px;
+      color: $color-neutral-white;
+
+      &::placeholder {
+        font-size: $font-size-3;
+        color: $color-neutral-5;
+      }
+    }
+    &:focus-within {
+      border: 1px solid $color-main-primary;
+      box-shadow: 0px 0px 4px 0px $color-box-shadow-primary;
+    }
+    &.input-readonly {
+      &:focus-within {
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+    // &:hover {
+    //   background: var(--input-border-background-hover, $color-neutral-neutral-6);
+    //   border: 1px solid var(--input-border-hover, $color-neutral-neutral-5);
+    // }
+
+    .ant-input-prefix {
+      margin-inline-end: 10px;
+    }
+  }
+
+  .input-default.ant-input-status-error,
+  .input-default .ant-input-number-status-error,
+  .input-default.ant-input-affix-wrapper-status-error,
+  .input-default.ant-input-number-affix-wrapper-status-error {
+    border: 1px solid $color-state-error;
+    background: rgba(222, 48, 48, 0.15);
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+      font-family: SG-400;
+      -webkit-text-fill-color: $color-neutral-white !important;
+      -webkit-box-shadow: 0 0 0px 1000px rgba(222, 48, 48, 0.15) inset !important;
+      transition: background-color 5000s ease-in-out 0s !important;
+    }
+  }
+
+  .ant-form-item-required {
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .ant-input::placeholder {
+    -webkit-text-fill-color: $color-neutral-4;
+    color: $color-neutral-4;
+    font-size: $font-size-2;
+  }
+
+  .ant-input-prefix {
+    margin-right: 2px !important;
+  }
+}

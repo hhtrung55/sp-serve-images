@@ -1,0 +1,9 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.wrap-tab{
+    @include mobile{
+    margin-top: 30px;
+    }
+}

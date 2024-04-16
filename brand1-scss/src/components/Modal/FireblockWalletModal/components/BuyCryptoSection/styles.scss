@@ -1,0 +1,17 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.buy-crypto-section {
+  padding: 16px;
+  border-radius: 8px;
+  background: $color-neutral-3;
+  &__left {
+    p {
+      color: $color-neutral-neutral-5;
+      font-size: $font-size-1;
+      font-weight: $font-weight-4;
+      line-height: 150%;
+    }
+  }
+}

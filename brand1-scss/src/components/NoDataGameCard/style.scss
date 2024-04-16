@@ -1,0 +1,24 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.no-result__container {
+  height: 10.9375rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.no-result__label {
+  color: #656a79;
+  display: inline-block;
+  font-family: SG-700;
+  font-size: 1rem;
+  width: 70px;
+  text-align: center;
+  line-height: 20px;
+  user-select: none;
+}

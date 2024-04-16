@@ -1,0 +1,15 @@
+.page-wrapper {
+  width: 100%;
+  max-width: 59rem;
+  margin: 0 auto;
+  .page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        max-width: 18.75rem;
+        padding: 7.5rem 0rem;
+    }
+  }
+}

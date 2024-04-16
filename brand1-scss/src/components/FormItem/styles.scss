@@ -1,0 +1,58 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+
+.form-item {
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+
+  margin-bottom: 0;
+
+  .title {
+    font-size: $font-size-3;
+    font-family: SG-400;
+    color: var(--neutral-neutral-5, #6c708a);
+    letter-spacing: -0.16px;
+    margin: 0;
+    & > span {
+      color: var(--error-color, $color-state-error);
+      // margin-left: 4px;
+    }
+    font-size: 14px;
+  }
+
+  &__tooltip {
+    margin-left: 5px;
+  }
+}
+
+.vertical-layout {
+  .ant-row {
+    flex-direction: column;
+    align-items: start;
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .ant-form-item-label {
+    text-align: start;
+    padding: 0;
+    margin: -1px 0;
+  }
+}
+
+.required {
+  color: var(--states-error, #de3030);
+  margin: 0 !important;
+}
+
+.ant-form-item-explain {
+  margin-top: 6px;
+}
+
+.ant-form-item-explain-error {
+  color: var(--input-error, $color-state-error) !important;
+  font-size: 0.875rem;
+}

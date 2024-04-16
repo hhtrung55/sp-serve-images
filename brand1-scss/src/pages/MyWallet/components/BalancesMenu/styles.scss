@@ -1,0 +1,50 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.balances-menu {
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: var(--Neutral-Neutral-3, #22263b);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 330px;
+  padding: 16px 24px;
+  gap: 12px;
+
+  color: $color-neutral-white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: SG-400;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+
+  position: absolute;
+  right: -4px !important;
+  top: 6px;
+  @include mobile {
+    right: -54px !important;
+  }
+  &__header {
+    margin-bottom: 12px;
+  }
+
+  .ant-radio-group {
+    font-size: 14px !important;
+  }
+
+  .green-text {
+    color: $color-states-success;
+  }
+
+  &__add-btn path {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__list {
+    max-height: 50vh;
+    overflow: auto;
+  }
+}

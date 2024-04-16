@@ -1,0 +1,27 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+$bg-opacity: 0.2;
+
+.superbit-tag {
+  font-family: SG-400;
+  font-size: 0.875rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+
+  &.type-success {
+    color: $color-state-success;
+    background: rgba($color-state-success, $bg-opacity);
+  }
+
+  &.type-fail {
+    color: $color-state-error;
+    background: rgba($color-state-error, $bg-opacity);
+  }
+
+  &.type-pending {
+    color: $color-neutral-7;
+    background: $color-neutral-4;
+  }
+}

@@ -1,0 +1,185 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.contained-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-family: SG-700;
+  }
+
+  &--type1 {
+    color: $color-main-primary !important;
+    background: $color-background-button-1 !important;
+    border-color: $color-background-button-1 !important;
+
+    &:hover:disabled,
+    &:disabled {
+      color: var(--btn-contained-text-color-disable, $color-neutral-neutral-4) !important;
+      background: var(--btn-contained-bg-disable, $color-neutral-neutral-5) !important;
+      border-color: var(--btn-contained-bg-disable, $color-neutral-neutral-5) !important;
+    }
+    &:hover {
+      color: var(--btn-contained-text-color-hover, $color-neutral-white) !important;
+      background: var(--btn-contained-bg-hover, $color-neutral-blue) !important;
+      border-color: var(--btn-contained-bg-hover, $color-neutral-blue) !important;
+    }
+  }
+
+  &--type2 {
+    color: var(--btn-contained-bg, $color-primary-primary);
+    background: rgba($color: var(--btn-contained-bg-rgb, $color-primary-rgb), $alpha: 0.1);
+    border: none;
+    &:hover {
+      background: rgba($color: var(--btn-contained-bg-rgb, $color-primary-rgb), $alpha: 0.25);
+    }
+    &:disabled {
+      color: var(--btn-contained-text-color-disable, $color-neutral-neutral-4);
+      background: var(--btn-contained-bg-disable, $color-neutral-neutral-5);
+    }
+  }
+
+  &--active {
+    color: $text-color-white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Stroke-blue, #0085ff);
+    background: $color-main-primary;
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+      4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+  }
+
+  &--submit {
+    color: $text-color-white;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--Stroke-blue, #0085ff);
+    background: $color-main-primary;
+    box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+      4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+    &:disabled {
+      color: $text-color-white !important;
+      background: $color-main-primary;
+      border: none !important;
+      border-radius: 8px;
+      opacity: 0.3;
+      box-shadow: 0px 0px 10px 0px rgba(40, 105, 246, 0.7), 5px 5px 10px 0px #abcdff inset,
+        4px -5px 10px 0px rgba(12, 59, 223, 0.7) inset;
+    }
+  }
+
+  &--secondary {
+    color: $color-white-0;
+    padding: 5px 13px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    background: $color-neutral-4;
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    span {
+      font-family: SG-700;
+    }
+
+    display: flex;
+    align-items: center;
+    &:disabled {
+      border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+      opacity: 0.3;
+      color: $color-neutral-7;
+      background: var(--Neutral-Neutral-4, #414459);
+      box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    }
+  }
+
+  &--cancel {
+    color: var(--neutral-neutral-8, #eff0f7);
+    display: flex;
+    padding: 13px 28px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    background: var(--neutral-neutral-4, #414459);
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+    &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+      opacity: 0.8;
+      color: var(--neutral-neutral-8, #eff0f7);
+      border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    }
+  }
+
+  &--danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--neutral-neutral-8, #eff0f7);
+    border-radius: 8px;
+    border: 1px solid $color-state-error-2;
+    background: $color-state-error;
+    box-shadow: 0px 0px 10px 0px rgba(245, 34, 45, 0.7), 5px 5px 10px 0px #ffb5ab inset,
+      4px -5px 10px 0px rgba(223, 76, 12, 0.7) inset;
+  }
+
+  &--claim {
+    color: $color-neutral-green-2;
+    font-style: normal;
+    line-height: 24px;
+    border-radius: 8px;
+    font-size: $font-size-2;
+    font-weight: SG-500;
+    background: rgba(100, 183, 73, 0.2);
+    border: none;
+    gap: 2px;
+    &:disabled {
+      color: $color-neutral-green-2;
+      opacity: 0.4;
+      background: rgba(100, 183, 73, 0.2);
+    }
+    &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+      opacity: 0.8;
+      color: $color-neutral-green-2;
+    }
+  }
+}
+
+.btn-large {
+  padding: 13px 28px;
+  height: 50px;
+  font-size: $font-size-3;
+}
+
+.btn-medium {
+  padding: 10px 20px;
+  height: 44px;
+  font-size: $font-size-3;
+}
+
+.btn-small {
+  padding: 5px 12px;
+  height: 31px;
+  font-size: $font-size-2;
+}
+
+.ant-btn-loading {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.over-flow-text {
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+}

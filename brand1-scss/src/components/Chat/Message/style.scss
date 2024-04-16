@@ -1,0 +1,61 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.sp-message-item__container {
+  .rank {
+    margin-right: 14px;
+    .rank__img {
+    }
+  }
+  .message {
+    color: var(--Neutral-Neutral-5, #6c708a);
+    font-family: SG-400;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: middle;
+    a {
+      line-break: anywhere;
+      &.superbit-link {
+        color: var(--States-Orange, #a45a28);
+      }
+    }
+    img{ border-radius: unset;}
+
+    word-wrap: break-word;
+    display: inline;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 180%;
+    img {
+      margin: 0px 3px;
+      vertical-align: middle;
+    }
+  }
+  .sender {
+    line-height: 150%;
+    cursor: pointer !important;
+
+    span {
+      display: inline-block;
+      max-width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: SG-500;
+      font-size: 12px;
+    }
+    .sender__tooltip {
+      font-size: 12px;
+    }
+    .sender__mod {
+      color: #1890ff;
+    }
+    .sender__admin {
+      color: var(--States-Orange, #ff9901);
+    }
+    .sender__member {
+      color: var(--Neutral-Neutral-8, #eff0f7);
+    }
+  }
+}

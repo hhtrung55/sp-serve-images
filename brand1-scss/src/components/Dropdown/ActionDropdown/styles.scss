@@ -1,0 +1,36 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.action-dropdown {
+  border-radius: 2px;
+  background: $color-neutral-3;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+  .ant-dropdown-arrow {
+    &::before,
+    &::after {
+      background: $color-neutral-3;
+    }
+  }
+
+  .ant-dropdown-menu {
+    background: $color-neutral-3;
+    padding: 0;
+
+    .ant-dropdown-menu-item:hover {
+      background-color: $color-neutral-stroke;
+    }
+
+    .ant-dropdown-menu-title-content {
+      color: $color-white-0;
+      font-size: $font-size-2;
+      font-weight: $font-weight-4;
+      line-height: 150%;
+    }
+  }
+}
+
+.more-icon {
+  cursor: pointer;
+}

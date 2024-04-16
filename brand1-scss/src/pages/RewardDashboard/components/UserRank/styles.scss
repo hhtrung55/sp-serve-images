@@ -1,0 +1,127 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.user-rank {
+  display: flex;
+  padding: 16px 24px 24px 24px;
+  background-color: $color-neutral-2;
+  flex-wrap: wrap;
+  gap: 60px;
+  border-radius: 16px;
+
+  h5 {
+    color: $color-white-0;
+    font-size: $font-size-5;
+    font-family: SG-700;
+    // line-height: 32px;
+  }
+
+  .highest-rank-des {
+    font-size: $font-size-2;
+    color: $color-neutral-5;
+    font-family: SG-400;
+  }
+
+  .all-rank-button {
+    font-family: SG-700;
+    cursor: pointer;
+    font-size: $font-size-5;
+    color: $color-main-primary;
+  }
+
+  &__current-rank {
+    width: 25%;
+    @include mobile {
+      width: 100%;
+    }
+    &__name {
+      color: $color-neutral-5;
+      font-size: $font-size-2;
+      font-family: SG-400;
+      line-height: 150%;
+    }
+
+    &__total-wagered {
+      color: #c25b37;
+      font-size: $font-size-3;
+      font-family: SG-700;
+      line-height: 24px;
+    }
+
+    &__minimum-wagered {
+      color: $color-neutral-5;
+      font-size: $font-size-3;
+      font-family: SG-400;
+    }
+  }
+
+  &__next-rank {
+    flex: 1;
+    &__header {
+      // margin-bottom: 30px;
+      button {
+        padding: 0;
+        span {
+          color: $color-main-primary;
+          font-size: $font-size-5;
+          font-family: SG-700;
+          line-height: 32px;
+        }
+      }
+    }
+    &__item {
+      &__progress-wrapper {
+        width: 60%;
+        display: flex;
+        align-items: center;
+      }
+
+      &__icon {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        margin-right: 16px;
+
+        .bronze-rank-icon {
+          width: 75%;
+        }
+
+        .other-rank-icon {
+          width: 100%;
+        }
+      }
+
+      &__progress {
+        width: 30%;
+        margin-right: 12px;
+        height: 100%;
+
+        span {
+          font-size: $font-size-2;
+          font-family: SG-500;
+          line-height: 22px;
+        }
+        .ant-progress {
+          margin: 0;
+          .ant-progress-inner {
+            background-color: $color-neutral-4;
+          }
+        }
+      }
+
+      &__wager {
+        color: $color-neutral-5;
+        font-size: $font-size-3;
+        font-family: SG-400;
+        line-height: 24px;
+        margin-top: 15px;
+      }
+
+      .add-reward-btn .add-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

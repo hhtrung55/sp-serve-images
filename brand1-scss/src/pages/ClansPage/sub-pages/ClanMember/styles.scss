@@ -1,0 +1,103 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-member {
+  padding: 20px;
+  &__header {
+    h5 {
+      font-size: $font-size-3;
+      font-weight: $font-weight-7;
+      color: $color-white-0;
+    }
+
+    p {
+      color: $color-neutral-5;
+      font-size: $font-size-3;
+      font-weight: $font-weight-5;
+      line-height: 24px;
+    }
+
+    &-title {
+      font-size: $font-size-3;
+      font-family: SG-700;
+      color: $color-neutral-white;
+    }
+  }
+
+  &__filter {
+    margin-top: 16px;
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+      & > div:first-child {
+        flex: 1;
+      }
+    }
+    .input-search-wrapper {
+      flex: 1;
+      .input-default {
+        height: 44px;
+        margin-right: 0px;
+      }
+    }
+
+    .sort-select-wrapper {
+      min-width: 185px;
+
+      @include mobile {
+        flex: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  &__table {
+    margin-top: 12px;
+
+    .rank-icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include mobile {
+      .rank-icon {
+        width: 22.8px;
+        height: 20px;
+      }
+    }
+
+    #select-more {
+      position: relative;
+
+      .more-icon {
+        cursor: pointer;
+      }
+
+      .action-dropdown {
+        top: 187% !important;
+      }
+    }
+  }
+
+  &__empty-list {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 123px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__load-more {
+    margin-top: 24px;
+  }
+
+  .member-player {
+    color: $color-neutral-8;
+    font-size: $font-size-2;
+    font-weight: $font-weight-4;
+    line-height: 150%;
+  }
+}

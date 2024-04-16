@@ -1,0 +1,45 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_themes.scss';
+@import 'src/assets/scss/responsive.scss';
+.game-input {
+  cursor: pointer;
+
+  input.input-default.ant-input::placeholder,
+  span.input-default input.ant-input::placeholder {
+    font-size: 16px;
+    color: $color-neutral-5;
+    -webkit-text-fill-color: $color-neutral-5;
+  }
+
+  input.input-default,
+  span.input-default {
+    border-radius: 12px;
+    background: $color-neutral-2;
+    color: $color-neutral-white;
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+
+    .ant-input-suffix {
+      div {
+        display: flex;
+        align-items: center;
+      }
+      img {
+        cursor: pointer;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper-focused.input-default.input-readonly:focus-within {
+    border: 1px solid var(--primary-main, #0075ff) !important;
+    box-shadow: 0px 0px 4px 0px #2869f6 !important;
+  }
+  .ant-input-affix-wrapper-focused.ant-input-affix-wrapper-status-error.input-default.input-readonly:focus-within {
+    border: 1px solid $color-state-error !important;
+    box-shadow: none !important;
+  }
+}

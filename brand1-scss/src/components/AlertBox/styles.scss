@@ -1,0 +1,24 @@
+@import "src/assets/scss/_colors.scss";
+@import 'src/assets/scss/variable.scss';
+@import "src/assets/scss/responsive.scss";
+
+
+.alert-box {
+  border-radius: 8px;
+  // background: $background-error-color;
+  padding: 16px;
+  svg {
+    width: 22px !important;
+    height: 22px;
+  }
+  &__message {
+    color: $color-state-error;
+    font-size: $font-size-2;
+    font-weight: $font-weight-5;
+    @include mobile {
+      line-height: 30px;
+    }
+    line-height: 22px;
+    width: 95%;
+  }
+}

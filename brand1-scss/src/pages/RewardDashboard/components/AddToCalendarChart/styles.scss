@@ -1,0 +1,51 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.add-to-calendar-chart {
+  margin-top: 30px;
+  @include mobile {
+    flex-direction: column;
+  }
+  &__wrapper {
+    position: relative;
+    img {
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .ant-progress-inner {
+      width: 170px !important;
+      height: 170px !important;
+      svg {
+        circle:nth-child(1) {
+          stroke-width: 15;
+        }
+        circle:nth-child(2) {
+          stroke-width: 8;
+        }
+        circle:nth-child(3) {
+          stroke-width: 8;
+        }
+      }
+    }
+  }
+
+  &__legend {
+    &__item {
+      &__rectangle {
+        width: 36px;
+        height: 12px;
+      }
+
+      &__percent,
+      &__label {
+        font-family: SG-700;
+        font-size: $font-size-2;
+        line-height: 150%;
+      }
+    }
+  }
+}

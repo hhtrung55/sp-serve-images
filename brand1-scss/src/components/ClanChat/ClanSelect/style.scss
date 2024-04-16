@@ -1,0 +1,65 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.clan-select__container {
+  border-radius: 12px;
+  background: var(--Neutral-Neutral-3, #22263b);
+  position: relative;
+  padding: 4px;
+  .clan-select {
+    padding: 0px 16px;
+  }
+  .clan-select__next,
+  .clan-select__pre {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .clan-select__next {
+    right: -2px;
+  }
+  .clan-select__pre {
+    left: -2px;
+  }
+}
+.clan__btn-item {
+  outline: none;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  span {
+    color: var(--Neutral-Neutral-5, #6c708a);
+    line-height: 150%;
+    font-size: 14px;
+    font-family: SG-700;
+    position: relative;
+
+    .clan__badge {
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+      background-color: var(--States-Error, #de3030);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0px;
+      right: -22px;
+      color: #FFF;
+    }
+  }
+}
+.clan__btn-item {
+  &.selected {
+    border: 1px solid var(--Strock-White, rgba(255, 255, 255, 0.12));
+    background: var(--Neutral-Neutral-4, #414459);
+    color: var(--Neutral-Neutral-8, #eff0f7);
+    box-shadow: 6px 6px 10px 0px rgba(31, 38, 74, 0.39) inset, -6px -6px 4px 0px rgba(230, 230, 238, 0.04) inset;
+  }
+}

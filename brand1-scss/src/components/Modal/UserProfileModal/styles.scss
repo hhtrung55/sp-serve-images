@@ -1,0 +1,175 @@
+@import "src/assets/scss/_colors.scss";
+@import "src/assets/scss/variable.scss";
+@import "src/assets/scss/responsive.scss";
+
+.profile-modal-wrapper {
+  @include mobile {
+    .ant-modal-content {
+      padding: 16px;
+    }
+  }
+}
+
+.profile-modal {
+  &__header {
+    margin-bottom: 20px;
+    .info-container {
+      max-width: calc(100% - 126px);
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    &__current-rank {
+      width: 101.831px;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &__current-rank-mobile {
+      display: none;
+      width: 35px;
+      height: 32px;
+      @include mobile {
+        display: block;
+      }
+    }
+
+    &__name {
+      color: $color-white-0;
+      font-size: $font-size-7;
+      font-weight: $font-weight-7;
+      line-height: 150%
+    }
+
+    &__tip-btn {
+      cursor: pointer;
+    }
+
+    &__rank-name,
+    &__next-rank {
+      label {
+        color: $color-neutral-6;
+        font-size: $font-size-2;
+        font-weight: $font-weight-4;
+        line-height: 150%;
+      }
+
+      span {
+        color: $color-state-info;
+        font-size: $font-size-2;
+        font-weight: $font-weight-7;
+        line-height: 150%;
+      }
+    }
+
+    &__next-rank {
+      &__amount {
+        color: $color-neutral-6 !important;
+        font-size: $font-size-2 !important;
+        font-weight: $font-weight-4 !important;
+        line-height: 150%;
+      }
+    }
+  }
+
+  &__detail,
+  &__favorite-game {
+    padding: 16px;
+    border-radius: 8px;
+    background: $color-neutral-3;
+  }
+
+  &__detail {
+    margin-bottom: 8px;
+    row-gap: 10px;
+    column-gap: 20px;
+
+    & > div {
+      min-width: 40%;
+
+      @include mobile {
+        min-width: 100%;
+      }
+    }
+    &__item {
+      label {
+        color: $color-neutral-5;
+        font-size: $font-size-2;
+        font-weight: $font-weight-4;
+        line-height: 150%;
+      }
+      span {
+        color: $color-white-0;
+        font-size: $font-size-2;
+        font-weight: $font-weight-7;
+        line-height: 150%;
+      }
+    }
+  }
+
+  &__favorite-game {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    label {
+      color: $color-neutral-5;
+      font-size: $font-size-2;
+      font-weight: $font-weight-7;
+      line-height: 150%;
+    }
+
+    span {
+      color: $color-white-0;
+      font-size: $font-size-5;
+      font-weight: $font-weight-7;
+      line-height: 32px;
+    }
+
+    &__icon {
+      cursor: pointer;
+    }
+  }
+}
+
+.profile-modal-private {
+  padding-top: 10px;
+  p {
+    color: $color-white-0;
+    font-size: $font-size-5;
+    font-weight: $font-weight-7;
+    line-height: 32px;
+  }
+}
+
+.rank-info-tooltip__overlay {
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      text-wrap: nowrap;
+      width: fit-content;
+    }
+  }
+}
+
+.rank-info-tooltip {
+  &__text {
+    color: $color-neutral-6;
+  }
+  &__amount {
+    color: $color-neutral-white;
+    font-weight: 700;
+  }
+  &__overlay {
+    .ant-tooltip-content {
+      .ant-tooltip-inner {
+        text-wrap: nowrap;
+        width: fit-content;
+      }
+    }
+  }
+}
